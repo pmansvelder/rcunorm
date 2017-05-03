@@ -12,6 +12,8 @@
 \contentsline {section}{\numberline {3.5}De hoekmodule}{11}{section.3.5}
 \contentsline {section}{\numberline {3.6}De stationsmodules}{11}{section.3.6}
 \contentsline {section}{\numberline {3.7}Opbouw poten}{11}{section.3.7}
+\contentsline {section}{\numberline {3.8}Achterwanden}{12}{section.3.8}
+\contentsline {section}{\numberline {3.9}Verlichting}{13}{section.3.9}
 \contentsline {chapter}{\numberline {4}Het leggen van de rails}{14}{chapter.4}
 \contentsline {section}{\numberline {4.1}Gebruikte rail}{14}{section.4.1}
 \contentsline {section}{\numberline {4.2}Montage}{14}{section.4.2}
