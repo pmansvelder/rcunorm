@@ -73,23 +73,23 @@ Normen H0 groep\\
 
 Hoofdstuk 1 geeft de opbouw en overzicht van dit document.
 
-Hoofdstuk 2 geeft een korte inleiding tot het systeem en de normen.
+Hoofdstuk \ref{ch:normen} geeft een korte inleiding tot het systeem en de normen.
 
-Hoofdstuk 3 beschrijft de mechanische opbouw van de modules.
+Hoofdstuk \ref{ch:modules} beschrijft de mechanische opbouw van de modules.
 
-Hoofdstuk 4 beschrijft het leggen van de rails.
+Hoofdstuk \ref{ch:rails} beschrijft het leggen van de rails.
 
-Hoofdstuk 5 beschrijft de normen van de elektrische installatie.
+Hoofdstuk \ref{ch:elektra} beschrijft de normen van de elektrische installatie.
 
-Hoofdstuk 6 beschrijft de beveiling van de baan.
+Hoofdstuk \ref{ch:beveiliging} beschrijft de beveiling van de baan.
 
-Hoofdstuk 7 beschrijft de bovenleiding.
+Hoofdstuk \ref{ch:bovenleiding} beschrijft de bovenleiding.
 
-Hoofdstuk 8 beschrijft de opbouw van het landschap.
+Hoofdstuk \ref{ch:landschap} beschrijft de opbouw van het landschap.
 
-Hoofdstuk 9 beschrijft de aansluiting van de modules en de booster.
+Hoofdstuk \ref{ch:electronica} beschrijft de aansluiting van de modules en de booster.
 
-Hoofdstuk 10 beschrijft de gebruikte digitale centrale.
+Hoofdstuk \ref{ch:centrale} beschrijft de gebruikte digitale centrale.
 
 \section{Afkortingen en begrippen}
 \begin{tabular}{| l |p{13cm}|}
@@ -115,7 +115,7 @@ XpressNet&Ook Roconet of XBus genoemd, door Lenz ge"{i}ntroduceerde bus voor com
 \end{tabular}
 
 \chapter{Inleiding}
-
+\label{ch:normen}
 M-track is een modulair systeem voor half nul met een middenrail, waarbij de beide spoorstaven elektrisch gescheiden zijn. Bij de RailClub Utrecht wordt dit systeem gebruikt om zowel 2- als 3-rail systeem rollend materieel te laten rijden.
 
 Dit document beschrijft de norm voor M-track, die we bij Railclub Utrecht gebruiken. Voor zaken die niet in de norm geregeld zijn is het zinvol die eerst met de moduleco\"{o}rdinator te overleggen.
@@ -123,7 +123,6 @@ Dit document beschrijft de norm voor M-track, die we bij Railclub Utrecht gebrui
 Voor de leden die besluiten mee te doen met deze modulebaan is het raadzaam eerst te kijken hoe dingen in elkaar steken en te vragen als er iets niet duidelijk is.
 
 \section{Systeemnormen}
-
 De systeemnormen van M-track bestaan uit:
 \begin{itemize}
 \item Het gebruikte (digitale) systeem
@@ -375,10 +374,20 @@ We gebruiken dan dus 2 x de ST-204 lengtes voor de rails met houten bielzen, of 
   {\includegraphics[scale=1.0]{images/rcu_peco_sl102}}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[!ht]
   \captionbox
   {Peco SL-18\label{pecosl18}}
   {\includegraphics[scale=1.0]{images/rcu_peco_sl18}}
+\end{figure}
+
+\section{Proef met railplaatjes}
+
+Om de aansluiting tussen de bakken te verbeteren gaan we een proef doen met zogenaamde 'railplaatjes', kleine printplaatjes waarop de einden van de rails worden gesoldeerd. Hierbij is de afstand tussen de rails geborgd op 57 mm, en is er dus ook een goede mechanische bevestiging van de rails geregeld.
+
+\begin{figure}
+  \captionbox
+  {Railplaatjes\label{railplaatjes}}
+  {\includegraphics[scale=0.6]{images/railplaatjes}}
 \end{figure}
 
 \chapter{Normen elektrische installatie}
@@ -482,8 +491,8 @@ De kleuren van de kabels zijn niet kritisch, het is alleen voor het troubleshoot
 \end{figure}
 
 \chapter{Beveiliging van de baan}
-VERVALLEN
-\\
+\label{ch:beveiliging}
+
 De treinenloop wordt op de baan geregeld m.b.v. seinen en de daarbij behorende rem- en stop stukken.
 
 Wanneer een trein een sein passeert moet dit sein automatisch in de stand stop komen,
@@ -493,6 +502,7 @@ Bij een station moet zowel het inrijden als het uitrijden beveiligd worden met e
 Een gevarenpunt is bijvoorbeeld een inrij- of uitrijsein van een station of bij een spooraftakking. Er is echter een mogelijkheid om bij de hoofdsporen een tijdelijk automatisch groen in te bouwen zodat niet altijd alles handmatig bediend moet worden, zie hiervoor de volgende schema's.
 
 \chapter{De bovenleiding}
+\label{ch:bovenleiding}
 
 Voor de bovenleiding wordt het materiaal van Sommerfeldt of van Viessmann gebruikt. We houden uiteraard zoveel mogelijk het Nederlandse voorbeeld aan. Maar soms is de situatie zodanig dat er andere oplossingen bedacht moeten worden. Dan is een Duitse oplossing eventueel mogelijk. Uiteraard wordt getracht dit te zoveel mogelijk te voorkomen. De rijdraden worden niet elektrisch aangesloten. Ze dienen overigens wel zodanig opgehangen te worden, dat treinen met stroomafnemers omhoog 5mm onder de draad kunnen rijden. Om het aanzien van de baan ten goede te laten komen, wordt er voor de rijdraden gebruik gemaakt van de standaard rijdraad van Sommerfeldt/Viessmann. De plaats van de masten is conform de montagevoorschriften van Sommerfeldt. Dat wil zeggen, 34 mm uit het hart van het spoor en 69 mm boven het spoor. De afstand van de mast tot de scheiding van de module bedraagt precies 135 mm. Als overgangsrijdraad tussen twee modules dient een Sommerfeldt/Viessmann rijdraad. Deze heeft een lengte van 270 mm, waarvan de uiteinden gebogen zijn, als in figuur \ref{figuur9}. Deze normen zijn uiteraard belangrijk, maar ten alle tijden moet bekeken worden of de trein zonder problemen onder de bovenleiding kan passeren. Dat is veel belangrijker dan dat een bovenleiding er realistisch uitziet!
 
@@ -512,10 +522,10 @@ De rijdraad wordt zigzaggend boven de rails opgehangen. Om de zigzag ophanging v
 
 Een uitzondering hierop vormen de hoekmodules. In een boog dient voor het buitenste spoor altijd een korte uithouder en voor het binnenste spoor een lange uithouder toegepast te worden. Dit houdt in dat aan de ene zijde de opstelling wel klopt maar aan de andere zijde niet.
 
-Zie paragraaf \ref{ch:bovenleiding} voor benodigde onderdelen en nummers
+Zie paragraaf \ref{ch:normen_bovenleiding} voor benodigde onderdelen en nummers
 
 \section{Normen bovenleiding}
-\label{ch:bovenleiding}
+\label{ch:normen_bovenleiding}
 
 \begin{tabular}{| l | l |}
 \hline
@@ -587,6 +597,7 @@ De volgende rijdraden zijn leverbaar:
 \end{tabular}
 
 \chapter{Opbouw van het landschap}
+\label{ch:landschap}
 
 Het landschap dient een Nederlandse uitstraling te hebben met Nederlandse gebouwen en toebehoren.
 
@@ -690,7 +701,7 @@ Om alles wat onder de baan wordt opgeborgen bij een tentoonstelling aan het oog 
 Zie ook het boekje voor de regels tijdens beurzen, opendagen ect.
 
 \chapter{Modules, boosters en bezetmelders}
-
+\label{ch:electronica}
 \section{Inleiding}
 
 In het kader van de samenwerking van de H0-groepen binnen RailClub Utrecht maken we gebruik van een gemeenschappelijke baan voor 2- en 3-rail materiaal. Ook werken we met een simpel digitaal systeem , waarmee het mogelijk is om zowel het \marklin (Motorola) protocol aan te sturen als het DCC protocol.
@@ -819,6 +830,7 @@ Bij gebruik van meerdere boosters in de baan (1 booster per basismodule), moeten
 Als dit nog niet gebeurd is moet er maar 1 booster actief gemaakt worden, dus 1 booster aan 230V, en  de andere boosters niet aansluiten!
 
 \chapter{Universele Centrale (DCC/Motorola)}
+\label{ch:centrale}
 De centrale bestaat uit een elektronicamodule met touchscreen en interface (zie bijlage \ref{ch:centrale}). De centrale is inmiddels in een kastje ingebouwd, en ziet er als volgt uit (figuur \ref{centrale}):
 \\
 
@@ -966,6 +978,7 @@ Per decoderadres kan dit omgewisseld worden:
 \appendix
 
 \chapter{Testen Modules}
+\label{ch:testen}
 Voor het testen van de modules is een testkastje gemaakt, die controleert of de aansluitingen van de module nog correct zijn.
 
 \begin{figure}[ht]
@@ -1258,7 +1271,7 @@ Op het dubbele RJ45-aansluitblok zijn aan de linker connector de detectiestukken
 \end{tabular}
 
 \chapter{Beschrijving Interfaceprint MDRRC-II Centrale}
-\label{ch:centrale}
+\label{ch:interface_centrale}
 
 De centrale wordt middels een interfaceprint (figuur \ref{im:interface}) aangesloten aan de buitenwereld, hierin zitten de volgende hulpschakelingen:
 
@@ -1293,6 +1306,7 @@ De vier knoppen onder het touchscreen hebben ook een functie, hoewel er op dit m
 \end{enumerate}
 
 \chapter{Terugmelderaansluitingen}
+\ref{ch:terugmeldingen}
 Aan de centrale kun je terugmelders aansluiten van het type S88. Dit gaat middels de zogenaamde S88N-norm, die gebruik maakt van Rj45 (UTP)-stekkers, zoals ze gebruikt worden voor computernetwerken. Deze kabels zijn makkelijk te krijgen in diverse lengtes, en goedkoop.
 Een eigenschap van S88 is dat het een 'keten' is van modules: de eerste module wordt verbonden met de tweede, de tweede met de derde, et cetera. De laatste module gaat naar de centrale. Een gevolg hiervan is dat de centrale moet weten hoe lang de keten is. Hierbij moet ook nog rekening worden gehouden met de grootte van een module. De centrale kent standaard 16-voudige modules, en moet dan ook worden ingesteld met het aantal van deze modules.
 Dit gaat als volgt: 
@@ -1312,6 +1326,7 @@ Dit gaat als volgt:
 \end{enumerate}
 
 \chapter{Instellingen Rocrail}
+\ref{ch:rocrail}
 Om het programma Rocrail met de centrale te laten werken, ga je als volgt van start:
 
 \begin{figure}[!ht]
