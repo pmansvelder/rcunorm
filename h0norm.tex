@@ -14,6 +14,8 @@
 \usepackage{caption}
 \captionsetup[figure]{slc=off} % "slc" is an abbreviation for "singlelinecheck"
 
+\usepackage{subcaption}
+
 \usepackage{geometry}
 \geometry{a4paper,total={180mm,257mm},left=20mm,top=20mm}
 
@@ -363,15 +365,16 @@ Bij wijze van proef wordt er gekeken of Pecorails met midden contactrail stevig 
 We gebruiken dan dus 2 x de ST-204 lengtes voor de rails met houten bielzen, of de flexrail SL-102 voor de rails met betonnen bielzen (hier zijn geen vaste lengtes voor beschikbaar).
 
 \begin{figure}
-  \captionbox
-  {Peco ST-204\label{pecost204}}
-  {\includegraphics[scale=1.0]{images/rcu_peco_st204}}
-\end{figure}
-
-\begin{figure}
-  \captionbox
-  {Peco SL-102\label{pecosl102}}
-  {\includegraphics[scale=1.0]{images/rcu_peco_sl102}}
+\centering
+\begin{subfigure}{.5\textwidth}
+  \includegraphics[scale=1.0]{images/rcu_peco_st204}
+  \caption{Peco ST-204\label{pecost204}}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \includegraphics[scale=1.0]{images/rcu_peco_sl102}
+  \caption{Peco SL-102\label{pecosl102}}
+\end{subfigure}
+\caption{Peco rails}
 \end{figure}
 
 \begin{figure}[!ht]
@@ -384,10 +387,10 @@ We gebruiken dan dus 2 x de ST-204 lengtes voor de rails met houten bielzen, of 
 
 Om de aansluiting tussen de bakken te verbeteren gaan we een proef doen met zogenaamde 'railplaatjes', kleine printplaatjes waarop de einden van de rails worden gesoldeerd. Hierbij is de afstand tussen de rails geborgd op 57 mm, en is er dus ook een goede mechanische bevestiging van de rails geregeld.
 
-\begin{figure}
+\begin{figure}[!ht]
   \captionbox
   {Railplaatjes\label{railplaatjes}}
-  {\includegraphics[scale=0.6]{images/railplaatjes}}
+  {\includegraphics[scale=0.4]{images/railplaatjes}}
 \end{figure}
 
 \chapter{Normen elektrische installatie}
