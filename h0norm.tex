@@ -12,7 +12,8 @@
 \usepackage{hyperref}
 
 \usepackage{caption}
-\captionsetup[figure]{slc=off} % "slc" is an abbreviation for "singlelinecheck"
+%%\captionsetup[figure]{slc=off} % "slc" is an abbreviation for "singlelinecheck"
+\captionsetup{justification=raggedright,singlelinecheck=false}
 
 \usepackage{subcaption}
 
@@ -68,6 +69,8 @@ Normen H0 groep\\
 
 \listoffigures
 
+\listoftables
+
 \chapter{Opbouw document}
 
 \section{Documentoverzicht}
@@ -93,6 +96,8 @@ Hoofdstuk \ref{ch:electronica} beschrijft de aansluiting van de modules en de bo
 Hoofdstuk \ref{ch:centrale} beschrijft de gebruikte digitale centrale.
 
 \section{Afkortingen en begrippen}
+
+\begin{table}[h!]
 \begin{tabular}{| l |p{13cm}|}
 \hline
 \rowcolor[gray]{0.84}Afkorting & Omschrijving\\
@@ -114,6 +119,8 @@ S88&Een door \marklin \ ge"{i}ntroduceerde standaard voor bezetmelders (eigenlij
 XpressNet&Ook Roconet of XBus genoemd, door Lenz ge"{i}ntroduceerde bus voor communicatie van digitale modelspoorcomponenten.\\
 \hline
 \end{tabular}
+\caption{Gebruikte afkortingen}
+\end{table}
 
 \chapter{Inleiding}
 \label{ch:normen}
@@ -135,6 +142,7 @@ De systeemnormen van M-track bestaan uit:
 
 De afspraken zijn als volgt:
 
+\begin{table}[h!]
 \begin{tabular}{| l |p{7cm}|}
 \hline
 \cellcolor[gray]{0.84}Digitaal Systeem & Gecombineerd DCC/Motorola\\
@@ -170,6 +178,8 @@ De afspraken zijn als volgt:
 \cellcolor[gray]{0.84}De bovenleiding&Sommerfeldt\\
 \hline
 \end{tabular}
+\caption{Normen en afspraken}
+\end{table}
 
 \chapter{Modules}
 \label{ch:modules}
@@ -430,27 +440,32 @@ Een module met wissels heeft dus geen seinen, de seinen staan op de module voor 
 Treinen op het afbuigende spoor rijden door op de module n\'{a} de module met wissels, en stoppen dus nooit op deze module.
 De bediening van de wissels moet gebeuren door schakelaars op de module zelf, met behulp van een externe voeding. Deze mag niet uit de baanspanning worden gevoed. Deze schakelaars moeten 'puls'-schakelaars zijn, dus mogen niet in een vaste positie blijven staan.
 Verder moet de bediening aan te sluiten zijn op een wisseldecoder, zodat de wissels ook digitaal bestuurd kunnen worden. Beide mogelijkheden moeten parallel inzetbaar zijn, dus zelfs met digitale besturing moet handbediening nog mogelijk zijn.
-Er is alleen een tekening gemaakt van 1 variant, type '3a'. Desgewenst kunnen ook de andere varianten uitgetekend worden:
+Er is alleen een tekening gemaakt van 1 variant, type '3a', zie figuur \ref{im:modulebak_seinen_wissels}. Desgewenst kunnen ook de andere varianten uitgetekend worden:
 
-\begin{tabular}{| l | p{14cm} |}
+\begin{table}[h!]
+{\renewcommand{\arraystretch}{3}%
+\begin{tabular}{| l | m{7cm} | m{7cm} |}
 \hline
-Basismodule 3a&Links 2 sporen, rechts 4 sporen\\
+Basismodule 3a&Links 2 sporen, rechts 4 sporen& \parbox[c]{1em}{\includegraphics[width=7cm]{images/module_3a}} \\
 \hline
-Basismodule 3b&Links 4 sporen, rechts 2 sporen\\
+Basismodule 3b&Links 4 sporen, rechts 2 sporen& \parbox[c]{1em}{\includegraphics[width=7cm]{images/module_3b}} \\
 \hline
-Basismodule 3c&Links 2 sporen, rechts 3 sporen (linkerspoor met wissel)\\
+Basismodule 3c&Links 2 sporen, rechts 3 sporen (linkerspoor met wissel)&\parbox[c]{1em} {\includegraphics[width=7cm]{images/module_3c}} \\
 \hline
-Basismodule 3d&Links 2 sporen, rechts 3 sporen (rechterspoor met wissel)\\
+Basismodule 3d&Links 2 sporen, rechts 3 sporen (rechterspoor met wissel)&\parbox[c]{1em} {\includegraphics[width=7cm]{images/module_3d}} \\
 \hline
-Basismodule 3e&Links 3 sporen, rechts 2 sporen (linkerspoor met wissel)\\
+Basismodule 3e&Links 3 sporen, rechts 2 sporen (linkerspoor met wissel)&\parbox[c]{1em} {\includegraphics[width=7cm]{images/module_3e}} \\
 \hline
-Basismodule 3f&Links 3 sporen, rechts 2 sporen (rechterspoor met wissel)\\
+Basismodule 3f&Links 3 sporen, rechts 2 sporen (rechterspoor met wissel)&\parbox[c]{1em} {\includegraphics[width=7cm]{images/module_3f}} \\
 \hline
-Basismodule 3g&Links 3 sporen, rechts 3 sporen (linkerspoor met wissel naar links, rechterspoor met wissel naar rechts)\\
+Basismodule 3g&Links 3 sporen, rechts 3 sporen (linkerspoor met wissel naar links, rechterspoor met wissel naar rechts)&\parbox[c]{1em} {\includegraphics[width=7cm]{images/module_3g}} \\
 \hline
-Basismodule 3h&Links 3 sporen, rechts 3 sporen ( rechterspoor met wissel naar links, linkerspoor met wissel naar rechts)\\
+Basismodule 3h&Links 3 sporen, rechts 3 sporen ( rechterspoor met wissel naar links, linkerspoor met wissel naar rechts)&\parbox[c]{1em} {\includegraphics[width=7cm]{images/module_3h}} \\
 \hline
 \end{tabular}
+}
+\caption{Varianten Modulebak met wissels}
+\end{table}
 
 \subsection{Bezetmeldingsdraden, Remstukken en stopstukken}
 Deze worden voorzien van  violet en grijs  0,5 mm$^{2}$ (kabel/massief tbv RJ45 chassis)
@@ -527,6 +542,7 @@ Zie paragraaf \ref{ch:normen_bovenleiding} voor benodigde onderdelen en nummers
 \section{Normen bovenleiding}
 \label{ch:normen_bovenleiding}
 
+\begin{table}[h!]
 \begin{tabular}{| l | l |}
 \hline
 \cellcolor[gray]{0.84}Hoogte rijdraad&69 mm t.o.v. bovenkant spoorstaaf\\
@@ -540,13 +556,15 @@ Zie paragraaf \ref{ch:normen_bovenleiding} voor benodigde onderdelen en nummers
 \cellcolor[gray]{0.84}Uitslag rijdraad&6 mm naar weerszijde\\
 \hline
 \end{tabular}
-\\
+\caption{Normen bovenleiding}
+\end{table}
 
 Bij een rechte bak, in de rijrichting gezien, is aan het eerste portaal de rijdraad bevestigd aan de Y-hanger en aan het tweede portaal aan de mast zelf.
 Bij een hoekbak is de rijdraad in de buitenboog bevestigd aan de mast en bij de binnenboog aan de Y-hanger.
 
 Uit het programma van Sommerfeldt worden de volgende masten en portalen gebruikt:
 
+\begin{table}[h!]
 \begin{tabular}{| l |p{8cm}|}
 \hline
 \cellcolor[gray]{0.84}Nr. 500&Losse mast\\
@@ -566,10 +584,12 @@ Uit het programma van Sommerfeldt worden de volgende masten en portalen gebruikt
 \cellcolor[gray]{0.84}Nr. 163&Mastschakelaar\\
 \hline
 \end{tabular}
-\\
+\caption{Sommerfeldt artikelnummers}
+\end{table}
 
 De volgende rijdraden zijn leverbaar:
 
+\begin{table}[h!]
 \begin{tabular}{| l | l | l |}
 \hline
 \cellcolor[gray]{0.84}Nr. 140&Lengte 180 mm&Voor bogen vanaf R 300 mm\\
@@ -595,6 +615,8 @@ De volgende rijdraden zijn leverbaar:
 \cellcolor[gray]{0.84}Nr. 160&Lengte 500 mm&\\
 \hline
 \end{tabular}
+\caption{Sommerfeldt Rijdraden}
+\end{table}
 
 \chapter{Opbouw van het landschap}
 \label{ch:landschap}
@@ -635,8 +657,7 @@ Het gebruik van gekleurd zaagsel is niet toegestaan. Ook zaken die niet op schaa
 
 Deze norm bevat de namen en nummers van de gebruikte fabrikanten binnen de M\"{a}rklinbaan bij Railclub Utrecht.
 
-VERVALLEN  zie de MOAP lijst
-
+\begin{table}[h!]
 \begin{tabular}{| l | l |}
 \hline
 \cellcolor[gray]{0.84}Wegen van asfalt&Humbrol nr. 53\\
@@ -662,7 +683,8 @@ VERVALLEN  zie de MOAP lijst
 \cellcolor[gray]{0.84}Ruig gras&heki\\
 \hline
 \end{tabular}
-\\
+\caption{Onderdelen landschap}
+\end{table}
 
 Het spoor kan gelegen zijn op een spoordijk of loopt door een heuvel heen, dit noemen we een insnijding. Ook wanneer het spoor op maaiveld hoogte ligt, maaiveld is bovenzijde grond, zal het altijd iets hoger liggen dan de directe omgeving. Hierna volgen een voorbeeld van een spoordijk en een insnijding (figuur \ref{figuur13}).
 
@@ -901,6 +923,7 @@ Er zijn meerdere manieren om locs bekend te maken in de centrale, een van de mak
 Al deze locs worden nu dus aangestuurd met het 'default' protocol, je kunt het type wel wijzigen per lokadres.\\
 Met het Motorola protocol kun je ook \marklin 'Delta' decoders aansturen, de relatie tussen de 'Delta' adressen en de Motorola adressen is als volgt:\\
 
+\begin{table}[h!]
 \begin{tabular}{|l|l|}
 \hline
 Delta adres&Motorola Adres\\
@@ -915,7 +938,9 @@ Delta adres&Motorola Adres\\
 \hline
 5&80\\
 \hline
-\end{tabular}\\
+\end{tabular}
+\caption{\marklin \ Delta adressen}
+\end{table}
 
 Zie ook \url{http://encyclopedie.beneluxspoor.net/index.php/Het_Motorola_protocol}
 
