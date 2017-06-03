@@ -36,7 +36,6 @@
 \myfont
 
 \title{
-%%\includegraphics[scale=2.0]{images/rcu_logo}
 \includegraphics[scale=0.6]{images/RCU_logo}
 \makebox[\linewidth]{\rule{\textwidth}{0.4pt}}
 Railclub Utrecht
@@ -225,21 +224,16 @@ Meer info voor de constructie van deze poten, vindt u onder het kopje ''opbouw v
 De bovenbouw van de module wordt samengesteld uit twee gelijke kopschotten en twee zijkanten van 120 mm hoog en 1200 mm lang. Daar tussen komen nog twee tussenschotten.
 Tussen de kopschotten wordt de ondergrond voor de baan (het \trace) aangebracht. Het \trace rust op de tussenschotten. 
 
-Hierna wordt het neopreen band tussen de kopschotten op de ondergrond voor het \trace aangebracht. De bovenkant van het neopreenband zit gelijk met de bovenkant van de kopschotten, zie figuur \ref{figuur1}.
-
 \begin{figure}[ht]
   \captionbox
   {Opbouw open module\label{figuur1}}
   {\includegraphics[scale=0.2]{images/rcu_figuur1}}
 \end{figure}
 
-De kopschotten dienen nog wel in de vorm van het neopreen band te worden gevijld. 
-
 Nu trekken we eerst een hartlijn, in het midden van het spoor\trace, van het ene kopschot naar het andere. Dit moet nauwkeurig worden gedaan, omdat vanuit deze lijn de plaats wordt bepaald waar de rails komen te liggen.
 Het leggen van de rails wordt behandeld in hoofdstuk \ref{ch:rails}.
 
 Nu worden de gaten geboord waar later de masten voor de bovenleiding in geplaatst worden. 
-Plaatsen van 3 mm ringen niet vergeten (dikte neopreen).
 Hierna kan de moer die onderaan de mast zit ''vast'' worden gedraaid.
 
 \section{De rechte module zonder spoordijk}
@@ -271,10 +265,7 @@ De hoek tussen een kopschot en een zijschot is 22,50. Er zijn twee mogelijkheden
 
 Tegen deze hoekversteviging kan dan de standaard constructie voor de poten bevestigd worden. Hierna wordt de ondergrond van het baan\trace bevestigd. Er dient rekening mee gehouden te worden dat de eerste tien centimeter van de rails haaks, t.o.v. het kopschot ligt, en daarna pas de bocht begint. 
 
-De kopschotten dienen nog wel in de vorm van het neopreen band te worden gevijld. 
-
-Hierna wordt het neopreen aangebracht en daarop de rails gelegd. Nu worden de gaten geboord waar later de masten voor de bovenleiding in geplaatst worden. 
-Plaatsen van 3 mm ringen niet vergeten (dikte neopreen).
+Hierna wordt de rails gelegd. Nu worden de gaten geboord waar later de masten voor de bovenleiding in geplaatst worden. 
 Hierna kan de moer die onderaan de mast zit ''vast'' worden gedraaid.
 
 \section{De stationsmodules}
@@ -305,11 +296,11 @@ De draadstang met daarop een metalen schijf,  met een kunststof dop er overheen,
 
 \section{Achterwanden}
 \label{se:achterwanden}
-Bij elke module hoort een achterwand, deze is vast bevestigd aan de module. De hoogte van de achterwand is 48 cm (gemeten vanaf bovenkant rails). De achterwand wordt standaard blauw geschilderd.
+Bij elke module hoort een achterwand, deze is vast bevestigd aan de module. De hoogte van de achterwand is 48 cm (gemeten vanaf bovenkant rails). De achterwand wordt standaard blauw geschilderd (RAL kleur xxx).
 
 \section{Verlichting}
 \label{se:verlichting}
-Boven elke module komt verlichting in de vorm van een LEDstrip.
+Boven elke module komt verlichting in de vorm van een LEDstrip, uitwisselbaar met andere banen van de RCU.
 
 \chapter{Het leggen van de rails}
 \label{ch:rails}
@@ -1300,7 +1291,7 @@ De interface is voorzien van een aparte 12 volt-voeding, en bevat dan dus de vol
 \end{itemize}
 
 De centrale is voor de bediening van de baan verder niet nodig en kan op een plek buiten de baan worden neergezet (afhankelijk van de lengte van de kabels).
-De werking van de centrale is afhankelijk van de gebruikte softwareversie, op dit moment is dat 3.6.2.
+De werking van de centrale is afhankelijk van de gebruikte softwareversie, op dit moment is dat 3.8.2.
 De vier knoppen onder het touchscreen hebben ook een functie, hoewel er op dit moment maar 2 worden gebruikt:
 
 \begin{enumerate}
@@ -1308,8 +1299,37 @@ De vier knoppen onder het touchscreen hebben ook een functie, hoewel er op dit m
 \item De knop helemaal rechtsonder reset de centrale.
 \end{enumerate}
 
+\chapter{Programmeerschakeling Centrale}
+
+Hoewel het voor het rijden met op de modulebaan niet nodig is, is het mogelijk om de centrale te voorzien van een uitbreiding zodat ook (DCC-)loks kunnen worden geprogrammeerd.
+
+\begin{figure}[ht]
+  \captionbox
+  {Terugmeldschakeling centrale}
+  {\includegraphics[scale=0.7]{images/rcu-MDRRCII-ack}}
+\end{figure}
+
+\begin{itemize}
+\item Weerstand 39 Ohm
+\item Weerstand 680 Ohm
+\item Weerstand 47kOhm
+\item Diode 1N4004
+\item Optocoupler PC814
+\item Condensator 33nF
+\end{itemize}
+
+\chapter{Afmetingen gebruikte kast voor centrale}
+
+Dit zijn de boormaten voor het inbouwen van de centrale met interfaceprint in een lessenaarkast (TEKO TK363G).
+
+\begin{figure}[ht]
+  \captionbox
+  {Boormaten lessenaarkastje (Teko TK363G)}
+  {\includegraphics[scale=0.7]{images/inbouwmaten_centralekast}}
+\end{figure}
+
 \chapter{Terugmelderaansluitingen}
-\ref{ch:terugmeldingen}
+\label{ch:terugmeldingen}
 Aan de centrale kun je terugmelders aansluiten van het type S88. Dit gaat middels de zogenaamde S88N-norm, die gebruik maakt van Rj45 (UTP)-stekkers, zoals ze gebruikt worden voor computernetwerken. Deze kabels zijn makkelijk te krijgen in diverse lengtes, en goedkoop.
 Een eigenschap van S88 is dat het een 'keten' is van modules: de eerste module wordt verbonden met de tweede, de tweede met de derde, et cetera. De laatste module gaat naar de centrale. Een gevolg hiervan is dat de centrale moet weten hoe lang de keten is. Hierbij moet ook nog rekening worden gehouden met de grootte van een module. De centrale kent standaard 16-voudige modules, en moet dan ook worden ingesteld met het aantal van deze modules.
 Dit gaat als volgt: 
@@ -1329,7 +1349,7 @@ Dit gaat als volgt:
 \end{enumerate}
 
 \chapter{Instellingen Rocrail}
-\ref{ch:rocrail}
+\label{ch:rocrail}
 Om het programma Rocrail met de centrale te laten werken, ga je als volgt van start:
 
 \begin{figure}[!ht]
@@ -1388,8 +1408,6 @@ SUBSYSTEM=="tty" ATTRS{product}=="STM32 Virtual COM Port  " SYMLINK+="mdrrc2"
 
 Je ziet hier dezelfde id's terugkomen, de eerste regel selecteert op deze id's, de tweede regel zorgt ervoor dat er een 'symlink' wordt aangemaakt met de naam 'mdrrc2' onder de /dev/ structuur.
 Als deze regel actief is, zul je zien dat er altijd bij het aansluiten van de centrale een poort wordt aangemaakt met als naam /dev/mdrcc2, deze kun je gebruiken in Rocrail.
-
-%%\chapter{Problemen oplossen met MDRRC-II centrale}
 
 \chapter{Gebruik MDRRC-config programma}
 \label{ch:config}
@@ -1478,6 +1496,8 @@ Je kunt hier de naam en het protocol van een enkele lok wijzigen door op een van
 \item De loklijst importeren: je kunt een bestaand .csv bestand importeren, bijvoorbeeld een bestand die je zelf hebt ge\"{e}xporteerd en aangepast.
 \item De loklijst wissen: hierbij wordt de hele lijst leeggemaakt, op lok 1 na.
 \end{itemize}
+
+
 
 \end{document}
 
