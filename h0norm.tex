@@ -54,7 +54,7 @@ Normen H0 groep\\
 \hline
 \cellcolor[gray]{0.84}Eigenaar & Marc Timmermans / Peter Mansvelder\\
 \hline
-\cellcolor[gray]{0.84}Versie & 3.0\\
+\cellcolor[gray]{0.84}Versie & 3 (concept)\\
 \hline
 \cellcolor[gray]{0.84}Versiedatum & \today\\
 \hline
@@ -391,7 +391,7 @@ Om de aansluiting tussen de bakken te verbeteren gaan we een proef doen met zoge
 \begin{figure}[!ht]
   \captionbox
   {Railplaatjes\label{railplaatjes}}
-  {\includegraphics[scale=0.4]{images/railplaatjes}}
+  {\includegraphics[scale=0.6]{images/railplaatjes}}
 \end{figure}
 
 \begin{figure}[!ht]
@@ -399,6 +399,8 @@ Om de aansluiting tussen de bakken te verbeteren gaan we een proef doen met zoge
   {Railplaatjes Gemonteerd op 2 vaste K-rails\label{railplaatjes_gemonteerd}}
   {\includegraphics[scale=0.2]{images/railplaatjes_gemonteerd}}
 \end{figure}
+
+Let op: bij monteren van de railplaatjes wordt de rechte kant aan het kopschot gemonteerd, de rails moeten daar worden afgezaagd zodat de overgang mechanisch zo sterk mogelijk is. Op afbeelding \ref{railplaatjes_gemonteerd} is dit nog niet gebeurd.
 
 \chapter{Normen elektrische installatie}
 \label{ch:elektra}
@@ -505,8 +507,13 @@ De kleuren van de kabels zijn niet kritisch, het is alleen voor het troubleshoot
   {\includegraphics[scale=0.6]{images/rcu_modulebak_seinen_wissels}}
 \end{figure}
 
-\chapter{Beveiliging van de baan}
+\chapter{Wissels en Seinen}
 \label{ch:beveiliging}
+
+\section{Wisselaansturing}
+Voor het bedienen van de wissels wordt geen gebruik gemaakt van relais die de fabrikant van de wissels levert, daar deze kwetsbaar zijn en veel storingen veroorzaken. Er is gekozen voor het gebruik van servo's. Hiervoor wordt gebruik gemaakt van standaard modelbouwservo's en een aantal stukjes styreen om een standaard servohouder te maken. De aansturing van de servo's gebeurt met een op Arduino gebaseerde print. Deze maakt het mogelijk om 2 servos's aan te sturen, waarbij per servo de begin- en eindpositie kan worden ingesteld, alsmede de snelheid waarmee de wissel omgezet wordt. Het bedienen van de wissels gebeurt met 2 drukknoppen per servo, waarbij parallel een wisseldecoder kan worden ingezet om de wissels digitaal aan te kunnen sturen.
+
+\section{Seinen}
 
 De treinenloop wordt op de baan geregeld m.b.v. seinen en de daarbij behorende rem- en stop stukken.
 
@@ -514,7 +521,7 @@ Wanneer een trein een sein passeert moet dit sein automatisch in de stand stop k
 stand stop is een rood tonend sein.
 
 Bij een station moet zowel het inrijden als het uitrijden beveiligd worden met een sein. Het op ''groen'' zetten van een sein kan op verschillende manieren worden gedaan. Volautomatisch, niet zo geschikt voor seinen die een gevarenpunt beveiligen, of handmatig.
-Een gevarenpunt is bijvoorbeeld een inrij- of uitrijsein van een station of bij een spooraftakking. Er is echter een mogelijkheid om bij de hoofdsporen een tijdelijk automatisch groen in te bouwen zodat niet altijd alles handmatig bediend moet worden, zie hiervoor de volgende schema's.
+Een gevarenpunt is bijvoorbeeld een inrij- of uitrijsein van een station of bij een spooraftakking. Er is echter een mogelijkheid om bij de hoofdsporen een tijdelijk automatisch groen in te bouwen zodat niet altijd alles handmatig bediend moet worden.
 
 \chapter{De bovenleiding}
 \label{ch:bovenleiding}
@@ -1426,8 +1433,7 @@ Onder Linux kun je de naam van de poort zien in de systeemlogs (commando 'dmesg'
 \end{verbatim}
 \myfont
 Je ziet hier dus een apparaat verschijnen met de volgende informatie:
-idVendor = 0483
-idProduct = 5740
+idVendor = 0483, idProduct = 5740.
 Het apparaat wordt aangesloten aan poort /dev/ttyACM0, deze kun je gebruiken in de instellingen van Rocrail.
 Als je een meer permanente verwijzing wilt, kun je een 'udev rule' aanmaken, dit gaat onder Ubuntu als volgt:
 Maak een bestand aan onder de directory /etc/udev/rules.d, noem deze bijvoorbeeld 70-mdrrc2.rules. Je hebt hier systeem (root) rechten voor nodig. Zet het volgende in dit bestand:
@@ -1519,12 +1525,12 @@ In dit scherm kun je direct zien welke loks zijn gedefinieerd in de centrale, en
 Je kunt hier de naam en het protocol van een enkele lok wijzigen door op een van de velden te klikken en de wijziging in te vullen, en je kunt ook:
 
 \begin{itemize}
-\item Een nieuwe lok toevoegen: je voert dan alleen het adres in, de rest kun je in de lijst invullen
-\item Een lok verwijderen: hiervoor moet je eerst een regel selecteren
+\item Een nieuwe lok toevoegen: je voert dan alleen het adres in, de rest kun je in de lijst invullen.
+\item Een lok verwijderen: hiervoor moet je eerst een regel selecteren.
 \item De loklijst opslaan: doe dit als je klaar bent met wijzigen.
-\item De loklijst opslaan en de centrale herstarten: hierna kun je de loklijst direct gebruiken
-\item De loklijst exporteren: de lijst wordt geëxporteerd naar een .csv bestand, wat je kunt wijzigen in bv. Excel; als naam kun je alles invullen, standaard wordt de naam gebruikt die in de voorkeuren is ingesteld.
-\item De loklijst importeren: je kunt een bestaand .csv bestand importeren, bijvoorbeeld een bestand die je zelf hebt ge\"{e}xporteerd en aangepast.
+\item De loklijst opslaan en de centrale herstarten: hierna kun je de loklijst direct gebruiken.
+\item De loklijst exporteren: de lijst wordt ge\"{e}xporteerd naar een .csv bestand, die je kunt wijzigen in bv. Excel; als naam kun je alles invullen, standaard wordt de naam gebruikt die in de voorkeuren is ingesteld.
+\item De loklijst importeren: je kunt een bestaand .csv bestand importeren, bijvoorbeeld een bestand dat je zelf hebt ge\"{e}xporteerd en aangepast.
 \item De loklijst wissen: hierbij wordt de hele lijst leeggemaakt, op lok 1 na.
 \end{itemize}
 
