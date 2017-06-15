@@ -97,7 +97,7 @@ Hoofdstuk \ref{ch:centrale} beschrijft de gebruikte digitale centrale.
 
 \section{Afkortingen en begrippen}
 
-\begin{table}[h!]
+\begin{table}[!ht]
 \begin{tabular}{| l |p{13cm}|}
 \hline
 \rowcolor[gray]{0.84}Afkorting & Omschrijving\\
@@ -142,7 +142,7 @@ De systeemnormen van M-track bestaan uit:
 
 De afspraken zijn als volgt:
 
-\begin{table}[h!]
+\begin{table}[!ht]
 \begin{tabular}{| l |p{7cm}|}
 \hline
 \cellcolor[gray]{0.84}Digitaal Systeem & Gecombineerd DCC/Motorola\\
@@ -189,25 +189,25 @@ Het systeem is opgebouwd uit modules. Er zijn verschillende modules mogelijk:
 
 Dit zijn de gebruikte profielen van de kopschotten, de voorkant van de module is steeds links:
 
-\begin{figure}[ht]
+\begin{figure}[!ht]
   \captionbox
   {Open Module, symmetrisch}
   {\includegraphics[scale=0.25]{images/rcu_open_sym}}
 \end{figure}
 
-\begin{figure}[ht]
+\begin{figure}[!ht]
   \captionbox
   {Open Module, asymmetrisch}
   {\includegraphics[scale=0.25]{images/rcu_open_asym}}
 \end{figure}
 
-\begin{figure}[ht]
+\begin{figure}[!ht]
   \captionbox
   {Vlakke Module, symmetrisch}
   {\includegraphics[scale=0.25]{images/rcu_vlak_sym}}
 \end{figure}
 
-\begin{figure}[ht]
+\begin{figure}[!ht]
   \captionbox
   {Vlakke Module, asymmetrisch}
   {\includegraphics[scale=0.25]{images/rcu_vlak_asym}}
@@ -234,10 +234,10 @@ Meer info voor de constructie van deze poten, vindt u onder het kopje ''opbouw v
 De bovenbouw van de module wordt samengesteld uit twee gelijke kopschotten en twee zijkanten van 120 mm hoog en 1200 mm lang. Daar tussen komen nog twee tussenschotten.
 Tussen de kopschotten wordt de ondergrond voor de baan (het \trace) aangebracht. Het \trace rust op de tussenschotten. 
 
-\begin{figure}[ht]
+\begin{figure}[!ht]
   \captionbox
   {Opbouw open module\label{figuur1}}
-  {\includegraphics[scale=0.2]{images/rcu_figuur1}}
+  {\includegraphics[scale=0.5]{images/rcu_figuur1}}
 \end{figure}
 
 Nu trekken we eerst een hartlijn, in het midden van het spoor\trace, van het ene kopschot naar het andere. Dit moet nauwkeurig worden gedaan, omdat vanuit deze lijn de plaats wordt bepaald waar de rails komen te liggen.
@@ -319,7 +319,7 @@ Het leggen van de rails dient zo nauwkeurig mogelijk te gebeuren, anders is de k
 Het hart van de rails ligt op 28,5 mm van de hartlijn. Nu wordt eerst deze hartlijn op het baan\trace getekend.
 
 \section{Gebruikte rail}
-Voor een standaard module van 1200 mm gebruiken we een standaard K-rail flexrail van 900mm (artikelnummer 2205), plus 2 x een vaste lengte van 180mm (artikelnummer 2200 \marklin ).
+Voor een standaard module van 1200 mm gebruiken we een standaard \marklin \ flexibele K-rail van 900mm (\marklin \ artikelnummer 2205), plus 2 x een vaste lengte van 180mm (\marklin \ artikelnummer 2200).
 
 \section{Montage}
 Zoals genoemd wordt de flexrail in het midden gemonteerd, en de 2 vaste lengtes worden aan beide zijden van de flexrail vastgezet met standaard railverbinders en de standaard klemmetjes voor het verbinden van de middenrail. Hierna worden deze laatste klemmetje aan elkaar gesoldeerd:
@@ -332,7 +332,7 @@ Zoals genoemd wordt de flexrail in het midden gemonteerd, en de 2 vaste lengtes 
 
 Wanneer deze draden zijn vast gesoldeerd wordt de rails op het baan\trace gelegd en met markeerspelden vastgezet. Deze spelden houden de rails op zijn plaats totdat deze zijn vastgelijmd. Bij de aansluitdraden wordt een klein gaatje geboord en de aansluitdraad door dit gaatje geschoven en strak getrokken. Wanneer de rails nu op de goede plaats ligt worden deze vastgelijmd. Voor het op de goede plaats leggen van de tweede rails maken we gebruik van een schuifmaat. Zie figuur \ref{figuur5}.
 
-\begin{figure}[ht]
+\begin{figure}[!ht]
   \captionbox
   {Afstellen rails\label{figuur5}}
   {\includegraphics[scale=1.0]{images/rcu_figuur5}}
@@ -444,7 +444,7 @@ De bediening van de wissels moet gebeuren door schakelaars op de module zelf, me
 Verder moet de bediening aan te sluiten zijn op een wisseldecoder, zodat de wissels ook digitaal bestuurd kunnen worden. Beide mogelijkheden moeten parallel inzetbaar zijn, dus zelfs met digitale besturing moet handbediening nog mogelijk zijn.
 Er is alleen een tekening gemaakt van 1 variant, type '3a', zie figuur \ref{im:modulebak_seinen_wissels}. Desgewenst kunnen ook de andere varianten uitgetekend worden:
 
-\begin{table}[h!]
+\begin{table}[!ht]
 {\renewcommand{\arraystretch}{3}%
 \begin{tabular}{| l | m{7cm} | m{7cm} |}
 \hline
@@ -522,13 +522,37 @@ stand stop is een rood tonend sein.
 
 Bij een station moet zowel het inrijden als het uitrijden beveiligd worden met een sein. Het op ''groen'' zetten van een sein kan op verschillende manieren worden gedaan. Volautomatisch, niet zo geschikt voor seinen die een gevarenpunt beveiligen, of handmatig.
 Een gevarenpunt is bijvoorbeeld een inrij- of uitrijsein van een station of bij een spooraftakking. Er is echter een mogelijkheid om bij de hoofdsporen een tijdelijk automatisch groen in te bouwen zodat niet altijd alles handmatig bediend moet worden.
+\section{Aansturing Seinen}
+
+\begin{figure}
+  \centering
+  \begin{subfigure}{.5\textwidth}
+    \includegraphics[scale=0.6]{images/henckes_p_sein}
+    \caption{Henckes P-Sein\label{im:psein}}
+  \end{subfigure}%
+  \begin{subfigure}{.5\textwidth}
+  \includegraphics[scale=0.6]{images/seindecoder}
+  \caption{Traintech Wissel/Seindecoder\label{im:seindecoder}}
+  \end{subfigure}
+  \caption{Gebruikte P-seinen en sturing}
+\end{figure}
+
+Hoewel er speciale decoders zijn voor het aansturen van allerlei lichtseinen, is het voor het gebruik van nederlandse lichtseinen zonder cijferbak (P-seinen) een simpeler oplossing mogelijk: schakeldecoders met 2 uitgangen. Hierbij wordt gebruik gemaakt van het feit dat de twee uitgangen van een schakeldecoder in principe 4 verschillende mogelijkheden kunnen uitbeelden, wat ruim voldoende is voor de 3 mogelijkheden van een P-sein. Hierbij worden de extra seinbeelden zoals 'geel knipper' e.d. niet gebruikt.
+We gebruiken hiervoor de '4-voudige wissel/sein decoder' van traintech (webshop.traintech.nl), met een 'diodetruc':
+Er wordt hierbij een extra aansluiting gemaakt aan de min-aansluiting van de print, dit is het printspoor wat aan de buitenkant loopt. Hier worden 2 in serie geschakelde diodes (1N4148) aan gesoldeerd, waarna deze aan de rode LED van het sein wordt aangesloten.
+
+Op 1 decoder kunnen op deze manier 2 seinen worden aangesloten.
+De voeding van de decoder kan zowel door het digitale signaal als door een aparte voeding worden geleverd, zie hiervoor de handleiding van de decoder.
+Er wordt hierbij een extra aansluiting gemaakt aan de min-aansluiting van de print, dit is het printspoor wat aan de buitenkant loopt. Hier worden 2 in serie geschakelde diodes (1N4148) aan gesoldeerd, waarna deze aan de rode LED van het sein wordt aangesloten.
+Op 1 decoder kunnen op deze manier 2 seinen worden aangesloten.
+De voeding van de decoder kan zowel door het digitale signaal als door een aparte voeding worden geleverd, zie hiervoor de handleiding van de decoder.
 
 \chapter{De bovenleiding}
 \label{ch:bovenleiding}
 
 Voor de bovenleiding wordt het materiaal van Sommerfeldt of van Viessmann gebruikt. We houden uiteraard zoveel mogelijk het Nederlandse voorbeeld aan. Maar soms is de situatie zodanig dat er andere oplossingen bedacht moeten worden. Dan is een Duitse oplossing eventueel mogelijk. Uiteraard wordt getracht dit te zoveel mogelijk te voorkomen. De rijdraden worden niet elektrisch aangesloten. Ze dienen overigens wel zodanig opgehangen te worden, dat treinen met stroomafnemers omhoog 5mm onder de draad kunnen rijden. Om het aanzien van de baan ten goede te laten komen, wordt er voor de rijdraden gebruik gemaakt van de standaard rijdraad van Sommerfeldt/Viessmann. De plaats van de masten is conform de montagevoorschriften van Sommerfeldt. Dat wil zeggen, 34 mm uit het hart van het spoor en 69 mm boven het spoor. De afstand van de mast tot de scheiding van de module bedraagt precies 135 mm. Als overgangsrijdraad tussen twee modules dient een Sommerfeldt/Viessmann rijdraad. Deze heeft een lengte van 270 mm, waarvan de uiteinden gebogen zijn, als in figuur \ref{figuur9}. Deze normen zijn uiteraard belangrijk, maar ten alle tijden moet bekeken worden of de trein zonder problemen onder de bovenleiding kan passeren. Dat is veel belangrijker dan dat een bovenleiding er realistisch uitziet!
 
-\begin{figure}[ht]
+\begin{figure}[!ht]
   \captionbox
   {Sommerfeldt rijdraad\label{figuur9}}
   {\includegraphics[scale=1.0]{images/rcu_figuur9}}
@@ -536,7 +560,7 @@ Voor de bovenleiding wordt het materiaal van Sommerfeldt of van Viessmann gebrui
 
 De rijdraad wordt zigzaggend boven de rails opgehangen. Om de zigzag ophanging van de rijdraad ook bij de overgang van de module voort te zetten, dient in de rijrichting gezien de eerste mast een lange uitlegger te hebben en de laatste een korte. Voor NS-portaalmasten houdt dit in, dat voor het rechterspoor de uithouder aan de V-steun is gemonteerd en de uithouder van het linkerspoor aan de linkermast. Zie figuur \ref{figuur10}.
 
-\begin{figure}[ht]
+\begin{figure}[!ht]
   \captionbox
   {Zigzaggende rijdraad\label{figuur10}}
   {\includegraphics[scale=1.0]{images/rcu_figuur10}}
@@ -549,7 +573,7 @@ Zie paragraaf \ref{ch:normen_bovenleiding} voor benodigde onderdelen en nummers
 \section{Normen bovenleiding}
 \label{ch:normen_bovenleiding}
 
-\begin{table}[h!]
+\begin{table}[!ht]
 \begin{tabular}{| l | l |}
 \hline
 \cellcolor[gray]{0.84}Hoogte rijdraad&69 mm t.o.v. bovenkant spoorstaaf\\
@@ -571,7 +595,7 @@ Bij een hoekbak is de rijdraad in de buitenboog bevestigd aan de mast en bij de 
 
 Uit het programma van Sommerfeldt worden de volgende masten en portalen gebruikt:
 
-\begin{table}[h!]
+\begin{table}[!ht]
 \begin{tabular}{| l |p{8cm}|}
 \hline
 \cellcolor[gray]{0.84}Nr. 500&Losse mast\\
@@ -596,7 +620,7 @@ Uit het programma van Sommerfeldt worden de volgende masten en portalen gebruikt
 
 De volgende rijdraden zijn leverbaar:
 
-\begin{table}[h!]
+\begin{table}[!ht]
 \begin{tabular}{| l | l | l |}
 \hline
 \cellcolor[gray]{0.84}Nr. 140&Lengte 180 mm&Voor bogen vanaf R 300 mm\\
@@ -633,7 +657,7 @@ Het landschap dient een Nederlandse uitstraling te hebben met Nederlandse gebouw
 De ondergrond van het landschap bestaat uit een raamwerk van hout dat in de vorm van het landschap is gezaagd. Over dit raamwerk wordt horrengaas gelegd en vastgezet met nietjes. Over dit gaas wordt een laag alabastine aangebracht. Vooraf wordt de alabastine gemengd met kleurpigment. Bijvoorbeeld de kleur van klei, zand of veen. Hierdoor ontstaan er geen witte plekken in het landschap. B.v. als er geboord moet worden. Ook is het dan niet nodig het hele landschap te schilderen.
 Een voorbeeld van een houten raamwerk is te zien in figuur \ref{figuur11}.
 
-\begin{figure}[ht]
+\begin{figure}[!ht]
   \captionbox
   {Houten raamwerk\label{figuur11}}
   {\includegraphics[scale=1.0]{images/rcu_figuur11}}
@@ -650,7 +674,7 @@ Nu volgt de kruidenlaag, gras en lage planten, daarna de struiken en als laatste
 Waarbij eerst de kleine bomen en pas daarna de grote.
 In figuur \ref{figuur12} is dit alles in een eenvoudig schema weergegeven.
 
-\begin{figure}[ht]
+\begin{figure}[!ht]
   \captionbox
   {Opbouw landschap\label{figuur12}}
   {\includegraphics[scale=1.0]{images/rcu_figuur12}}
@@ -664,7 +688,7 @@ Het gebruik van gekleurd zaagsel is niet toegestaan. Ook zaken die niet op schaa
 
 Deze norm bevat de namen en nummers van de gebruikte fabrikanten binnen de M\"{a}rklinbaan bij Railclub Utrecht.
 
-\begin{table}[h!]
+\begin{table}[!ht]
 \begin{tabular}{| l | l |}
 \hline
 \cellcolor[gray]{0.84}Wegen van asfalt&Humbrol nr. 53\\
@@ -695,7 +719,7 @@ Deze norm bevat de namen en nummers van de gebruikte fabrikanten binnen de M\"{a
 
 Het spoor kan gelegen zijn op een spoordijk of loopt door een heuvel heen, dit noemen we een insnijding. Ook wanneer het spoor op maaiveld hoogte ligt, maaiveld is bovenzijde grond, zal het altijd iets hoger liggen dan de directe omgeving. Hierna volgen een voorbeeld van een spoordijk en een insnijding (figuur \ref{figuur13}).
 
-\begin{figure}[ht]
+\begin{figure}[!ht]
   \captionbox
   {Insnijdingen\label{figuur13}}
   {\includegraphics[scale=1.0]{images/rcu_figuur13_14}}
@@ -703,13 +727,13 @@ Het spoor kan gelegen zijn op een spoordijk of loopt door een heuvel heen, dit n
 
 In de figuren \ref{figuur15} en \ref{figuur16} zijn de maten aangegeven die in het stationsgebied zorgdragen voor het probleemloos passeren van de treinen langs perrons,seinen, gebouwen en bruggen.
 
-\begin{figure}[ht]
+\begin{figure}[!ht]
   \captionbox
   {Profiel vrije ruimte 1\label{figuur15}}
   {\includegraphics[scale=0.6]{images/rcu_figuur15}}
 \end{figure}
 
-\begin{figure}[ht]
+\begin{figure}[!ht]
   \captionbox
   {Profiel vrije ruimte 2\label{figuur16}}
   {\includegraphics[scale=0.6]{images/rcu_figuur16}}
@@ -721,7 +745,7 @@ In bogen, zowel op de vrije baan als bij gebogen perrons, is het raadzaam de vri
 
 Om alles wat onder de baan wordt opgeborgen bij een tentoonstelling aan het oog van het publiek te onttrekken hangen er doeken rond de baan. Deze doeken worden opgehangen m.b.v. klittenband dat is bevestigd op latten die aan de baan worden vastgeschroefd met M5 schroeven. In de module zitten een aantal inslagmoeren bevestigd ter hoogte van iedere bovenleidingportaal. De lat is twee centimeter korter dan de module en 8 mm dik. De lat heeft een hoogte van 5 cm. In het midden zijn gaten geboord van 7 mm doornsnede. Om alle doeken op dezelfde hoogte te krijgen zijn de inslagmoeren 50 mm vanaf de onderkant van de module gemonteerd. Zie figuur \ref{figuur17}.
 
-\begin{figure}[ht]
+\begin{figure}[!ht]
   \captionbox
   {Positie klittenband t.b.v. doeken\label{figuur17}}
   {\includegraphics[scale=0.4]{images/rcu_figuur17}}
@@ -779,7 +803,7 @@ er zijn 2 soorten modules:
 \item module met seinen (eventueel wissels), elk spoor voorzien van 2 gelijke secties
 \end{enumerate}
 
-Een blok bestaat uit 3 secties: een detectiesectie, een remsectie en een stopsectie. Aan het eind van elke stopsectie staat een sein. Hieruit volgt dan ook dat elk blok per richting minimaal bestaat uit 2 modules: een basismodule en een seinenmodule:
+Een blok bestaat uit 3 secties: een detectiesectie, een remsectie en een stopsectie. Aan het eind van elke stopsectie staat een sein. Hieruit volgt dan ook dat elk blok per richting minimaal bestaat uit 2 modules: een basismodule en een seinenmodule, zie figuur \ref{im:3secties}:
 
 \begin{figure}[!ht]
   \captionbox
@@ -798,12 +822,11 @@ Elke module is met elkaar verbonden met een wielandstekker voor de (digitale) sp
 \subsection{Aansluiting detectiestukken}
 De secties worden middels banaanstekkers verbonden aan het bezetmelder aansluitblok (figuur \ref{im:rcu_bezetmelderblok}). 
 
-\begin{figure}[h]
+\begin{figure}[!ht]
   \captionbox
   {Bezetmelder aansluitblok\label{im:rcu_bezetmelderblok}}
   {\includegraphics[scale=1.0]{images/rcu_bezetmelderblok}}
 \end{figure}
-
 
 Het bezetmelder aansluitblok is ook aangesloten aan de railspanningsaansluitingen van de vaste bekabeling van de module, op deze manier kan de stroom- en massadetectie worden gedetecteerd. Deze aansluitingen komen uit op 2 banaan chassisdelen op het aansluitblok, om eventueel de detectiesecties direct aan te sluiten (zie hoofdstuk 'Zonder bezetmeldersecties').
 De aansluitingen van het aansluitblok worden aan de volgende secties aangesloten:
@@ -829,7 +852,7 @@ Bij het rijden zonder detectie kunnen alle detectiesecties aan elkaar worden doo
 
 \section{Modulebooster/hub}
 
-\begin{figure}[h]
+\begin{figure}[!ht]
   \captionbox
   {Bovenaanzicht modulebooster\label{modulebooster}}
   {\includegraphics[scale=0.5]{images/rcu_foto3}\\}
@@ -841,12 +864,17 @@ Verder zitten nog aangesloten op de booster:
 \item een vast gemonteerde drukknop voor het resetten na een kortsluiting: na het oplossen van de kortsluiting (onderste ledje aan) kan de booster worden gereset door deze knop in te drukken (onderste ledje moet weer uit gaan).
 \item aan de voorkant, gemonteerd op de zijkant van de module, 2 aansluitingen voor de Roco muizen.
 \item 3 statusleds, met de volgende betekenis (van voren af gezien):\\
-\\
-\begin{tabular}{|l|l|l|}
-\hline
-Digitaal Signaal Aanwezig&Voeding Aanwezig&Kortsluiting gedetecteerd\\
-\hline
+
+\begin{table}[!ht]
+\centering
+\label{my-label}
+\begin{tabular}{l|l|l}
+\cline{2-2}
+                           & Voeding Aanwezig &                           \\ \hline
+\multicolumn{1}{|l|}{Digitaal Signaal Aanwezig} &      & \multicolumn{1}{l|}{Kortsluiting gedetecteerd} \\ \cline{1-1} \cline{3-3} 
 \end{tabular}
+\end{table}
+
 \item 2 RJ12 (XpressNet)aansluitingen aan de zijkant voor de XpressNet kabel van de centrale en naar de volgende module (aansluitingen zijn doorgelust)
 \item een railuitgang die wordt aangesloten aan 2 banaanstekkers (rood voor signaal, zwart voor aarde).
 \end{itemize}
@@ -854,7 +882,13 @@ Digitaal Signaal Aanwezig&Voeding Aanwezig&Kortsluiting gedetecteerd\\
 Let op: je kunt dus een andere booster op de baan aansluiten, als je zorgt dat de modulebooster losgekoppeld is middels de banaanstekkers en de voeding.
 
 \subsection{Gebruik meerdere boosters en boosterscheiding}
-Bij gebruik van meerdere boosters in de baan (1 booster per basismodule), moeten deze van elkaar gescheiden worden, qua rijspanning. Hiervoor moet tussen 2 modules een 'boosterscheidingskabel' worden gemaakt, voorzien van 2 Wieland connectoren, met de tekst 'boosterscheiding. Het is voor de detectie niet relevant waar deze boosterscheiding komt.
+Bij gebruik van meerdere boosters in de baan (1 booster per basismodule), moeten deze van elkaar gescheiden worden, qua rijspanning. Hiervoor moet tussen 2 modules een 'boosterscheidingskabel' worden gemaakt, voorzien van 2 Wieland connectoren, met de tekst 'boosterscheiding (zie figuur \ref{im:boosterscheiding}). Het is voor de detectie niet relevant waar deze boosterscheiding komt.
+
+\begin{figure}[!ht]
+  \captionbox
+  {Boosterscheidingskabel\label{im:boosterscheiding}}
+  {\includegraphics[scale=1.0]{images/rcu_boosterscheiding}}\\
+\end{figure}
 
 Als dit nog niet gebeurd is moet er maar 1 booster actief gemaakt worden, dus 1 booster aan 230V, en  de andere boosters niet aansluiten!
 
@@ -863,7 +897,7 @@ Als dit nog niet gebeurd is moet er maar 1 booster actief gemaakt worden, dus 1 
 De centrale bestaat uit een elektronicamodule met touchscreen en interface (zie bijlage \ref{ch:centrale}). De centrale is inmiddels in een kastje ingebouwd, en ziet er als volgt uit (figuur \ref{centrale}):
 \\
 
-\begin{figure}[ht]
+\begin{figure}[!ht]
   \captionbox
   {Bovenaanzicht MDRRC-II centrale\label{centrale}}
   {\includegraphics[scale=0.1]{images/rcu_foto1}}\\
@@ -871,7 +905,7 @@ De centrale bestaat uit een elektronicamodule met touchscreen en interface (zie 
 
 Bij het opstarten of resetten van de centrale zie je linksonder in het scherm de huidige configuratie (zie figuur \ref{rcu-foto4}):
 
-\begin{figure}[h]
+\begin{figure}[!ht]
   \captionbox
   {Opstartscherm MDRRC-II centrale\label{rcu-foto4}}
   {\includegraphics[scale=0.6]{images/rcu_foto4}}\\
@@ -887,7 +921,7 @@ Bij het opstarten of resetten van de centrale zie je linksonder in het scherm de
 \section{Aansluiting Centrale aan booster(s)}
 De centrale wordt middels de XpressNet kabels aan de boosters aangesloten, de boosters worden hier onderling ook mee aangesloten. De (Multi)muizen moeten dan aan de boosters worden aangesloten. Het maakt niet uit waar in de keten de centrale wordt aangesloten, zie figuur \ref{im:aansluiten_booster}.
 
-\begin{figure}[ht]
+\begin{figure}[!ht]
   \captionbox
   {Aansluiten Centrale en Boosters\label{im:aansluiten_booster}}
   {\includegraphics[scale=0.5]{images/rcu_schema1}\\}
@@ -895,7 +929,7 @@ De centrale wordt middels de XpressNet kabels aan de boosters aangesloten, de bo
 
 De achterkant van de centrale ziet er als volgt uit (figuur \ref{centrale_achter}):\\
 
-\begin{figure}[h]
+\begin{figure}[!ht]
   \captionbox
   {Achteraanzicht MDRRC-II centrale\label{centrale_achter}}
   {\includegraphics[scale=0.3]{images/rcu_foto5}\\}
@@ -930,7 +964,7 @@ Er zijn meerdere manieren om locs bekend te maken in de centrale, een van de mak
 Al deze locs worden nu dus aangestuurd met het 'default' protocol, je kunt het type wel wijzigen per lokadres.\\
 Met het Motorola protocol kun je ook \marklin 'Delta' decoders aansturen, de relatie tussen de 'Delta' adressen en de Motorola adressen is als volgt:\\
 
-\begin{table}[h!]
+\begin{table}[!ht]
 \begin{tabular}{|l|l|}
 \hline
 Delta adres&Motorola Adres\\
@@ -1013,7 +1047,7 @@ Per decoderadres kan dit omgewisseld worden:
 \label{ch:testen}
 Voor het testen van de modules is een testkastje gemaakt, die controleert of de aansluitingen van de module nog correct zijn.
 
-\begin{figure}[ht]
+\begin{figure}[!ht]
   \captionbox
   {Testkastje Modules\label{im:testkastje}}
   {\includegraphics[scale=1.0]{images/rcu_foto2}\\}
@@ -1315,7 +1349,7 @@ De centrale wordt middels een interfaceprint (figuur \ref{im:interface}) aangesl
 \item Interface naar draaiknop, voor handbediening locs
 \end{itemize}
 
-\begin{figure}[ht]
+\begin{figure}[!ht]
   \captionbox
   {Schema MDRRC-II interface\label{im:interface}}
   {\includegraphics[scale=0.5]{images/rcu_schema2}\\}
@@ -1341,7 +1375,7 @@ De vier knoppen onder het touchscreen hebben ook een functie, hoewel er op dit m
 
 Hoewel het voor het rijden met op de modulebaan niet nodig is, is het mogelijk om de centrale te voorzien van een uitbreiding zodat ook (DCC-)loks kunnen worden geprogrammeerd.
 
-\begin{figure}[ht]
+\begin{figure}[!ht]
   \captionbox
   {Terugmeldschakeling centrale}
   {\includegraphics[scale=0.7]{images/rcu-MDRRCII-ack}}
@@ -1360,7 +1394,7 @@ Hoewel het voor het rijden met op de modulebaan niet nodig is, is het mogelijk o
 
 Dit zijn de boormaten voor het inbouwen van de centrale met interfaceprint in een lessenaarkast (TEKO TK363G).
 
-\begin{figure}[ht]
+\begin{figure}[!ht]
   \captionbox
   {Boormaten lessenaarkastje (Teko TK363G)}
   {\includegraphics[scale=0.7]{images/inbouwmaten_centralekast}}
@@ -1458,7 +1492,7 @@ Het programma werkt onder Linux en Windows, en bestaat uit een menuscherm en 3 a
 
 Het menu ziet er als volgt uit (figuur \ref{scs:menu}):\\
 
-\begin{figure}[ht]
+\begin{figure}[!ht]
   \captionbox
   {MDRRC-II Configuratiemenu\label{scs:menu}}
   {\includegraphics[scale=0.5]{images/rcu_screenshot1}\\}
@@ -1469,7 +1503,7 @@ Het menu ziet er als volgt uit (figuur \ref{scs:menu}):\\
 Om de verschillende programma's te gebruiken, moet de centrale middels USB aan de computer worden aangesloten, en de juiste parameters worden ingevuld:
 Klik op het meest rechtse icoon (figuur \ref{scs:settings}):
 
-\begin{figure}[ht]
+\begin{figure}[!ht]
   \captionbox
   {Instellingen\label{scs:settings}}
   {\includegraphics[scale=0.5]{images/rcu_screenshot2}\\}
