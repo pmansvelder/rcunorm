@@ -531,21 +531,42 @@ Een gevarenpunt is bijvoorbeeld een inrij- of uitrijsein van een station of bij 
     \caption{Henckes P-Sein\label{im:psein}}
   \end{subfigure}%
   \begin{subfigure}{.5\textwidth}
-  \includegraphics[scale=0.6]{images/seindecoder}
-  \caption{Traintech Wissel/Seindecoder\label{im:seindecoder}}
+    \includegraphics[scale=0.6]{images/seindecoder}
+    \caption{Traintech Wissel/Seindecoder\label{im:seindecoder}}
   \end{subfigure}
   \caption{Gebruikte P-seinen en sturing}
 \end{figure}
 
 Hoewel er speciale decoders zijn voor het aansturen van allerlei lichtseinen, is het voor het gebruik van nederlandse lichtseinen zonder cijferbak (P-seinen) een simpeler oplossing mogelijk: schakeldecoders met 2 uitgangen. Hierbij wordt gebruik gemaakt van het feit dat de twee uitgangen van een schakeldecoder in principe 4 verschillende mogelijkheden kunnen uitbeelden, wat ruim voldoende is voor de 3 mogelijkheden van een P-sein. Hierbij worden de extra seinbeelden zoals 'geel knipper' e.d. niet gebruikt.
 We gebruiken hiervoor de '4-voudige wissel/sein decoder' van traintech (webshop.traintech.nl), met een 'diodetruc':
-Er wordt hierbij een extra aansluiting gemaakt aan de min-aansluiting van de print, dit is het printspoor wat aan de buitenkant loopt. Hier worden 2 in serie geschakelde diodes (1N4148) aan gesoldeerd, waarna deze aan de rode LED van het sein wordt aangesloten.
+Er wordt hierbij een extra aansluiting gemaakt aan de min-aansluiting van de print, dit is het printspoor wat aan de buitenkant loopt. Hier worden 2 in serie geschakelde diodes (1N4148) aan gesoldeerd, waarna deze aan de rode LED van het sein wordt aangesloten (zie figuur \ref{im:aansturing_sein}).
+
+\begin{figure}[!ht]
+  \centering
+  \begin{subfigure}{.5\textwidth}
+    \includegraphics[scale=0.4]{images/traintech_decoder}
+    \caption{Traintech Decoder\label{im:traintech_decoder}}
+  \end{subfigure}%
+  \begin{subfigure}{.5\textwidth}
+    \includegraphics[scale=0.5]{images/aansluiting_seinen}
+    \caption{Aansluiten decoder\label{im:aansturing_sein}}
+   \end{subfigure}
+   \caption{Seindecoders}
+\end{figure}
 
 Op 1 decoder kunnen op deze manier 2 seinen worden aangesloten.
 De voeding van de decoder kan zowel door het digitale signaal als door een aparte voeding worden geleverd, zie hiervoor de handleiding van de decoder.
 Er wordt hierbij een extra aansluiting gemaakt aan de min-aansluiting van de print, dit is het printspoor wat aan de buitenkant loopt. Hier worden 2 in serie geschakelde diodes (1N4148) aan gesoldeerd, waarna deze aan de rode LED van het sein wordt aangesloten.
 Op 1 decoder kunnen op deze manier 2 seinen worden aangesloten.
 De voeding van de decoder kan zowel door het digitale signaal als door een aparte voeding worden geleverd, zie hiervoor de handleiding van de decoder.
+
+Dus bij het aansturen van het sein geldt:
+\begin{enumerate}
+\item uitgang 1 afbuigend, uitgang 2 recht: groen
+\item uitgang 1 recht, uitgang 2 afbuigend: geel
+\item uitgang 1 en 2 recht: rood
+\item uitgang 1 en 2 afbuigend: nvt
+\end{enumerate}
 
 \chapter{De bovenleiding}
 \label{ch:bovenleiding}
