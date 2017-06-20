@@ -50,7 +50,7 @@
 \contentsline {section}{\numberline {10.1}Aansluiting Centrale aan booster(s)}{39}{section.10.1}
 \contentsline {section}{\numberline {10.2}Rijden met Locs}{40}{section.10.2}
 \contentsline {subsubsection}{Toevoegen Loc}{41}{section*.49}
-\contentsline {subsubsection}{Verwijderen loc}{42}{section*.50}
+\contentsline {subsubsection}{Verwijderen loc}{41}{section*.50}
 \contentsline {subsubsection}{Wisselen Decodertype (vanaf softwareversie 3.6.1)}{42}{section*.51}
 \contentsline {section}{\numberline {10.3}Sturen van seinen en Wissels}{42}{section.10.3}
 \contentsline {chapter}{\numberline {A}Testen Modules}{43}{appendix.A}

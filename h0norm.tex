@@ -915,7 +915,7 @@ Als dit nog niet gebeurd is moet er maar 1 booster actief gemaakt worden, dus 1 
 
 \chapter{Universele Centrale (DCC/Motorola)}
 \label{ch:centrale}
-De centrale bestaat uit een elektronicamodule met touchscreen en interface (zie bijlage \ref{ch:centrale}). De centrale is inmiddels in een kastje ingebouwd, en ziet er als volgt uit (figuur \ref{centrale}):
+De centrale bestaat uit een elektronicamodule met touchscreen en interface (zie bijlage \ref{ch:interface_centrale}). De centrale is inmiddels in een kastje ingebouwd, en ziet er als volgt uit (figuur \ref{centrale}):
 \\
 
 \begin{figure}[!ht]
@@ -974,10 +974,10 @@ Er zijn meerdere manieren om locs bekend te maken in de centrale, een van de mak
 \begin{enumerate}
 \item Zorg dat de loc in de Multimaus is aangemaakt met naam en adres (andere parameters zijn niet belangrijk).
 \item Zet de MDRRC-II centrale op 'Receive Loc Library': 
-\item Reset de centrale
-\item Druk op 'SET'
-\item Druk op 'LL'
-\item Druk op 'RLL'
+\subitem Reset de centrale
+\subitem Druk op 'SET'
+\subitem Druk op 'LL'
+\subitem Druk op 'RLL'
 \item Zet de Multimaus op 'Send' (Menu Loc)
 \item Nu worden alle locs uit de Multimaus locbibliotheek ingelezen, op het touchscreen van de centrale worden alleen de nog niet bekende getoond.
 \end{enumerate}
@@ -1011,10 +1011,10 @@ Om een loc toe te voegen, ga je als volgt te werk:
 
 \begin{enumerate}
 \item Zet de MDRRC-II centrale op 'Add Loc': 
-\item Reset de centrale
-\item Druk op 'SET'
-\item Druk op 'LOC'
-\item Druk op 'ADD'
+\subitem Reset de centrale
+\subitem Druk op 'SET'
+\subitem Druk op 'LOC'
+\subitem Druk op 'ADD'
 \item Type nu op het numerieke cijferblok het adres in van de loc, als je verkeerd typte springt het nummer na 4 cijfers weer op 0.
 \item Druk op 'MM' om een loc met een Motorola-decoder toe te voegen, of op 'DCC' om een loc met een DCC-decoder toe te voegen
 \end{enumerate}
@@ -1027,10 +1027,10 @@ waarbij \textless type\textgreater  MM of DCC is.
 Om een loc te verwijderen, ga je als volgt te werk:
 \begin{enumerate}
 \item Zet de MDRRC-II centrale op 'Delete Loc': 
-\item Reset de centrale
-\item Druk op 'SET'
-\item Druk op 'LOC'
-\item Druk op 'DEL'
+\subitem Reset de centrale
+\subitem Druk op 'SET'
+\subitem Druk op 'LOC'
+\subitem Druk op 'DEL'
 \item Selecteer nu met + en - de gewenste loc in de centrale.
 \item Druk op 'DEL' om de loc te verwijderen uit de centrale. Je krijgt nu op het scherm de melding:
 Deleted Loc: XX
@@ -1040,11 +1040,11 @@ Deleted Loc: XX
 \subsubsection{Wisselen Decodertype (vanaf softwareversie 3.6.1)}
 Het is mogelijk om het type van de locomotief te veranderen: van DCC naar MM en omgekeerd.
 \begin{enumerate}
-\item Zet de MDRRC-II centrale op 'Change Decoder Type': 
-\item Reset de centrale
-\item Druk op 'SET'
-\item Druk op 'LOC'
-\item Druk op 'CHD'
+\item Zet de MDRRC-II centrale op 'Change Loc Decoder Type': 
+\subitem Reset de centrale
+\subitem Druk op 'SET'
+\subitem Druk op 'LOC'
+\subitem Druk op 'CHD'
 \item Selecteer nu met + en - de gewenste loc in de centrale.
 \item Druk op 'CHD' om het Decodertype te wisselen, je ziet nu op het scherm wat de wijziging is.
 \end{enumerate}
@@ -1054,10 +1054,11 @@ Net als bij locs is er ook een default protocol voor het aansturen van stationai
 Per decoderadres kan dit omgewisseld worden:
 
 \begin{enumerate}
-\item Reset de MDRRC-II centrale
-\item Druk op 'ON'
-\item Druk op 'OPT'
-\item Druk op 'SET'
+\item Zet de MDRRC-II centrale op 'Change Turnout Decoder Type': 
+\subitem Reset de MDRRC-II centrale
+\subitem Druk op 'ON'
+\subitem Druk op 'OPT'
+\subitem Druk op 'SET'
 \item Kies nu op de Multimaus het adres van de decoder die omgewisseld moet worden
 \item Door nu deze decoder aan te sturen, wordt hij omgewisseld van MM naar DCC en weer omgekeerd, dit kun je volgen op het touchscreen.
 \end{enumerate}
