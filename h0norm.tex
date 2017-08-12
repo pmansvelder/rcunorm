@@ -310,7 +310,51 @@ Bij elke module hoort een achterwand, deze is vast bevestigd aan de module. De h
 
 \section{Verlichting}
 \label{se:verlichting}
-Boven elke module komt verlichting in de vorm van een LEDstrip, uitwisselbaar met andere banen van de RCU.
+Boven elke module komt verlichting in de vorm van een LEDstrip van 100cm per module, uitwisselbaar met andere banen van de RCU. De verlichting is opgebouwd uit de volgende onderdelen:
+\begin{itemize}
+\item Wandrail 75cm (150 cm in twee stuks gezaagd), gemonteerd aan de achterkant van de achterwanden.
+{\includegraphics[scale=1.0]{images/wandrail}}
+\item Plankdrager 30cm\\
+{\includegraphics[scale=0.2]{images/plankdrager}}
+\item Hoekprofiel kunststof 50x50mm, gezaagd in stukken van 100cm.\\
+{\includegraphics[scale=0.2]{images/hoekprofiel}}
+\item LEDstrip 12 volt, 14,4W/m Warmwit, opgedeeld in stukken van 100cm.\\
+{\includegraphics[scale=0.2]{images/ledstrip}}
+\item 2 aansluitkabels (2 x 1mm$^{2}$)met Wieland ST16 stekkers per module.\\
+{\includegraphics[scale=0.2]{images/wielandstekker}}
+\item een voedingsadaptor 12 volt (verschillende vermogens)
+\item een dimmer
+\end{itemize}
+
+De hoekprofielen met verlichting kunnen doorgekoppeld worden, let hierbij op de kleuren van de kabels!
+Let op de stroomverdeling: de verlichting verbruikt ongeveer 1,25 Amp\`ere per meter. Dit houdt in dat het aantal te koppelen verlichtingsprofielen afhankelijk is van de gebruikte voedingsadaptor:
+\\
+
+\begin{tabular}{| l | l | l |}
+\hline
+Vermogen voeding&Amp\`erage&Aantal modules\\
+\hline
+36W&3A&2\\
+\hline
+60W&5A&4\\
+\hline
+72W&6A&4\\
+\hline
+120W&10A&8\\
+\hline
+\end{tabular}
+\\
+
+Bij overschrijding van de maximale stroom gaan de meeste adaptors de spanning verminderen, waardoor dus de totale verlichting zwakker gaat branden.
+De LEDstrips worden als volgt gemonteerd:
+\begin{itemize}
+\item Deel de LEDstrip op in secties van 100cm.
+\item Sluit aan elke kant een stuk wit aansluitsnoer (2 x 1mm$^{2}$) van ongeveer 50cm aan op de sectie LEDstrip, let hierbij op de kleuren: rood is +, blauw is -.
+\item Isoleer de verbinding met het snoer met een stuk krimpkous (wit, 10mm diameter).
+\item Plak de LEDstrip aan de binnenkant van het hoekprofiel, zo dicht mogelijk tegen de hoek aan.
+\item Maak de beide uiteinden van de LEDstrip mechanisch vast aan het hoekprofiel met bijvoorbeeld tie-wraps of binddraad.
+\item Monteer de Wieland stekkers aan de aansluitsnoeren.
+\end{itemize}
 
 \chapter{Het leggen van de rails}
 \label{ch:rails}
@@ -484,7 +528,13 @@ Het op twee plaatsen aansluiten van de rails per module maakt de installatie bed
 \section{Aansluiten Modules}
 Op de volgende pagina's worden de aansluitingen per modulebak aangegeven.
 Dit zijn de aansluitschema's zoals besproken in het overleg van woensdag 30 april 2016 met de aanwezige leden van de H0-groep, waaronder de moduleco\"{o}rdinatoren (Marc en Peter).
-Er is besloten om af te stappen van de PTT-stekers en een versimpelde aansluiting te gebruiken met de Wieland ST16 stekkers die ook gebruikt worden voor de BNLS-modules, deze zijn geschikt voor 48V/25A, goedkoop (ca. 1 euro per stuk), en simpel aan te sluiten middels schroefaansluitingen.
+Er is besloten om af te stappen van de PTT-stekers en een versimpelde aansluiting te gebruiken met de Wieland ST16 stekkers die ook gebruikt worden voor de BNLS-modules, deze zijn geschikt voor 48V/25A, goedkoop (ca. 1 euro per stuk), en simpel aan te sluiten middels schroefaansluitingen (zie figuur \ref{im:wielandstekker})
+
+\begin{figure}[!ht]
+  \captionbox
+  {Wieland ST16/2 stekker\label{im:wielandstekker}}
+  {\includegraphics[scale=0.2]{images/wielandstekker}}
+\end{figure}
 
 \subsection{Kabels}
 De kleuren van de kabels zijn niet kritisch, het is alleen voor het troubleshooten nuttig om de aangegeven kleuren aan te houden.

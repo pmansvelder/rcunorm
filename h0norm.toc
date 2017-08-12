@@ -14,59 +14,59 @@
 \contentsline {section}{\numberline {3.7}Opbouw poten}{13}{section.3.7}
 \contentsline {section}{\numberline {3.8}Achterwanden}{14}{section.3.8}
 \contentsline {section}{\numberline {3.9}Verlichting}{14}{section.3.9}
-\contentsline {chapter}{\numberline {4}Het leggen van de rails}{15}{chapter.4}
-\contentsline {section}{\numberline {4.1}Gebruikte rail}{15}{section.4.1}
-\contentsline {section}{\numberline {4.2}Montage}{15}{section.4.2}
-\contentsline {section}{\numberline {4.3}Proef met Peco rail}{16}{section.4.3}
-\contentsline {section}{\numberline {4.4}Proef met railplaatjes}{17}{section.4.4}
-\contentsline {chapter}{\numberline {5}Normen elektrische installatie}{19}{chapter.5}
-\contentsline {section}{\numberline {5.1}De 230 volt voeding van de baan}{19}{section.5.1}
-\contentsline {section}{\numberline {5.2}Het laagspanningsgedeelte van de baan}{19}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Modules zonder wissels}{19}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Modules met wissels}{20}{subsection.5.2.2}
-\contentsline {subsection}{\numberline {5.2.3}Bezetmeldingsdraden, Remstukken en stopstukken}{20}{subsection.5.2.3}
-\contentsline {section}{\numberline {5.3}Aansluiten Modules}{20}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Kabels}{20}{subsection.5.3.1}
-\contentsline {chapter}{\numberline {6}Wissels en Seinen}{24}{chapter.6}
-\contentsline {section}{\numberline {6.1}Wisselaansturing}{24}{section.6.1}
-\contentsline {section}{\numberline {6.2}Seinen}{24}{section.6.2}
-\contentsline {section}{\numberline {6.3}Aansturing Seinen}{24}{section.6.3}
-\contentsline {chapter}{\numberline {7}De bovenleiding}{26}{chapter.7}
-\contentsline {section}{\numberline {7.1}Normen bovenleiding}{26}{section.7.1}
-\contentsline {chapter}{\numberline {8}Opbouw van het landschap}{28}{chapter.8}
-\contentsline {section}{\numberline {8.1}Volgorde bij de opbouw van het landschap}{28}{section.8.1}
-\contentsline {section}{\numberline {8.2}Landschapsnormen}{29}{section.8.2}
-\contentsline {section}{\numberline {8.3}Optreden bij tentoonstellingen}{31}{section.8.3}
-\contentsline {chapter}{\numberline {9}Modules, boosters en bezetmelders}{33}{chapter.9}
-\contentsline {section}{\numberline {9.1}Inleiding}{33}{section.9.1}
-\contentsline {section}{\numberline {9.2}Modules}{33}{section.9.2}
-\contentsline {subsection}{\numberline {9.2.1}Omschakelen basismodules}{33}{subsection.9.2.1}
-\contentsline {subsection}{\numberline {9.2.2}Bezetmeldersecties}{34}{subsection.9.2.2}
-\contentsline {subsection}{\numberline {9.2.3}Aansluiting detectiestukken}{35}{subsection.9.2.3}
-\contentsline {subsection}{\numberline {9.2.4}Zonder bezetmeldersecties}{35}{subsection.9.2.4}
-\contentsline {section}{\numberline {9.3}Modulebooster/hub}{36}{section.9.3}
-\contentsline {subsection}{\numberline {9.3.1}Gebruik meerdere boosters en boosterscheiding}{37}{subsection.9.3.1}
-\contentsline {chapter}{\numberline {10}Universele Centrale (DCC/Motorola)}{38}{chapter.10}
-\contentsline {section}{\numberline {10.1}Aansluiting Centrale aan booster(s)}{39}{section.10.1}
-\contentsline {section}{\numberline {10.2}Rijden met Locs}{40}{section.10.2}
-\contentsline {subsubsection}{Toevoegen Loc}{41}{section*.49}
-\contentsline {subsubsection}{Verwijderen loc}{41}{section*.50}
-\contentsline {subsubsection}{Wisselen Decodertype (vanaf softwareversie 3.6.1)}{42}{section*.51}
-\contentsline {section}{\numberline {10.3}Sturen van seinen en Wissels}{42}{section.10.3}
-\contentsline {chapter}{\numberline {A}Testen Modules}{43}{appendix.A}
-\contentsline {section}{\numberline {A.1}Zelftest: controle testkastje}{43}{section.A.1}
-\contentsline {section}{\numberline {A.2}kortsluittest op module zonder rijdend materieel - enkel}{44}{section.A.2}
-\contentsline {section}{\numberline {A.3}kortsluittest op module zonder rijdend materieel - dubbel}{45}{section.A.3}
-\contentsline {section}{\numberline {A.4}verbindingstest op module met rijdend materieel (3-rail)}{47}{section.A.4}
-\contentsline {section}{\numberline {A.5}verbindingstest op module met rijdend materieel (2-rail)}{48}{section.A.5}
-\contentsline {chapter}{\numberline {B}Opbouw detectie aansluitblok}{50}{appendix.B}
-\contentsline {chapter}{\numberline {C}Beschrijving Interfaceprint MDRRC-II Centrale}{51}{appendix.C}
-\contentsline {chapter}{\numberline {D}Programmeerschakeling Centrale}{53}{appendix.D}
-\contentsline {chapter}{\numberline {E}Afmetingen gebruikte kast voor centrale}{54}{appendix.E}
-\contentsline {chapter}{\numberline {F}Terugmelderaansluitingen}{55}{appendix.F}
-\contentsline {chapter}{\numberline {G}Instellingen Rocrail}{56}{appendix.G}
-\contentsline {chapter}{\numberline {H}USB poorten en MDRRC-II centrale}{58}{appendix.H}
-\contentsline {chapter}{\numberline {I}Gebruik MDRRC-config programma}{59}{appendix.I}
-\contentsline {section}{\numberline {I.1}Programmainstellingen}{59}{section.I.1}
-\contentsline {section}{\numberline {I.2}Configuratie Editor}{60}{section.I.2}
-\contentsline {section}{\numberline {I.3}Loklijst editor}{61}{section.I.3}
+\contentsline {chapter}{\numberline {4}Het leggen van de rails}{16}{chapter.4}
+\contentsline {section}{\numberline {4.1}Gebruikte rail}{16}{section.4.1}
+\contentsline {section}{\numberline {4.2}Montage}{16}{section.4.2}
+\contentsline {section}{\numberline {4.3}Proef met Peco rail}{17}{section.4.3}
+\contentsline {section}{\numberline {4.4}Proef met railplaatjes}{18}{section.4.4}
+\contentsline {chapter}{\numberline {5}Normen elektrische installatie}{20}{chapter.5}
+\contentsline {section}{\numberline {5.1}De 230 volt voeding van de baan}{20}{section.5.1}
+\contentsline {section}{\numberline {5.2}Het laagspanningsgedeelte van de baan}{20}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Modules zonder wissels}{20}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Modules met wissels}{21}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Bezetmeldingsdraden, Remstukken en stopstukken}{21}{subsection.5.2.3}
+\contentsline {section}{\numberline {5.3}Aansluiten Modules}{21}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Kabels}{21}{subsection.5.3.1}
+\contentsline {chapter}{\numberline {6}Wissels en Seinen}{25}{chapter.6}
+\contentsline {section}{\numberline {6.1}Wisselaansturing}{25}{section.6.1}
+\contentsline {section}{\numberline {6.2}Seinen}{25}{section.6.2}
+\contentsline {section}{\numberline {6.3}Aansturing Seinen}{25}{section.6.3}
+\contentsline {chapter}{\numberline {7}De bovenleiding}{27}{chapter.7}
+\contentsline {section}{\numberline {7.1}Normen bovenleiding}{27}{section.7.1}
+\contentsline {chapter}{\numberline {8}Opbouw van het landschap}{29}{chapter.8}
+\contentsline {section}{\numberline {8.1}Volgorde bij de opbouw van het landschap}{29}{section.8.1}
+\contentsline {section}{\numberline {8.2}Landschapsnormen}{30}{section.8.2}
+\contentsline {section}{\numberline {8.3}Optreden bij tentoonstellingen}{32}{section.8.3}
+\contentsline {chapter}{\numberline {9}Modules, boosters en bezetmelders}{34}{chapter.9}
+\contentsline {section}{\numberline {9.1}Inleiding}{34}{section.9.1}
+\contentsline {section}{\numberline {9.2}Modules}{34}{section.9.2}
+\contentsline {subsection}{\numberline {9.2.1}Omschakelen basismodules}{34}{subsection.9.2.1}
+\contentsline {subsection}{\numberline {9.2.2}Bezetmeldersecties}{35}{subsection.9.2.2}
+\contentsline {subsection}{\numberline {9.2.3}Aansluiting detectiestukken}{36}{subsection.9.2.3}
+\contentsline {subsection}{\numberline {9.2.4}Zonder bezetmeldersecties}{36}{subsection.9.2.4}
+\contentsline {section}{\numberline {9.3}Modulebooster/hub}{37}{section.9.3}
+\contentsline {subsection}{\numberline {9.3.1}Gebruik meerdere boosters en boosterscheiding}{38}{subsection.9.3.1}
+\contentsline {chapter}{\numberline {10}Universele Centrale (DCC/Motorola)}{39}{chapter.10}
+\contentsline {section}{\numberline {10.1}Aansluiting Centrale aan booster(s)}{40}{section.10.1}
+\contentsline {section}{\numberline {10.2}Rijden met Locs}{41}{section.10.2}
+\contentsline {subsubsection}{Toevoegen Loc}{42}{section*.50}
+\contentsline {subsubsection}{Verwijderen loc}{42}{section*.51}
+\contentsline {subsubsection}{Wisselen Decodertype (vanaf softwareversie 3.6.1)}{43}{section*.52}
+\contentsline {section}{\numberline {10.3}Sturen van seinen en Wissels}{43}{section.10.3}
+\contentsline {chapter}{\numberline {A}Testen Modules}{44}{appendix.A}
+\contentsline {section}{\numberline {A.1}Zelftest: controle testkastje}{44}{section.A.1}
+\contentsline {section}{\numberline {A.2}kortsluittest op module zonder rijdend materieel - enkel}{45}{section.A.2}
+\contentsline {section}{\numberline {A.3}kortsluittest op module zonder rijdend materieel - dubbel}{46}{section.A.3}
+\contentsline {section}{\numberline {A.4}verbindingstest op module met rijdend materieel (3-rail)}{48}{section.A.4}
+\contentsline {section}{\numberline {A.5}verbindingstest op module met rijdend materieel (2-rail)}{49}{section.A.5}
+\contentsline {chapter}{\numberline {B}Opbouw detectie aansluitblok}{51}{appendix.B}
+\contentsline {chapter}{\numberline {C}Beschrijving Interfaceprint MDRRC-II Centrale}{52}{appendix.C}
+\contentsline {chapter}{\numberline {D}Programmeerschakeling Centrale}{54}{appendix.D}
+\contentsline {chapter}{\numberline {E}Afmetingen gebruikte kast voor centrale}{55}{appendix.E}
+\contentsline {chapter}{\numberline {F}Terugmelderaansluitingen}{56}{appendix.F}
+\contentsline {chapter}{\numberline {G}Instellingen Rocrail}{57}{appendix.G}
+\contentsline {chapter}{\numberline {H}USB poorten en MDRRC-II centrale}{59}{appendix.H}
+\contentsline {chapter}{\numberline {I}Gebruik MDRRC-config programma}{60}{appendix.I}
+\contentsline {section}{\numberline {I.1}Programmainstellingen}{60}{section.I.1}
+\contentsline {section}{\numberline {I.2}Configuratie Editor}{61}{section.I.2}
+\contentsline {section}{\numberline {I.3}Loklijst editor}{62}{section.I.3}
