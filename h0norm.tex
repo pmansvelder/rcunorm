@@ -54,7 +54,7 @@ Normen H0 groep\\
 \hline
 \cellcolor[gray]{0.84}Eigenaar & Marc Timmermans / Peter Mansvelder\\
 \hline
-\cellcolor[gray]{0.84}Versie & 3.1\\
+\cellcolor[gray]{0.84}Versie & 3.2\\
 \hline
 \cellcolor[gray]{0.84}Versiedatum & \today\\
 \hline
@@ -841,8 +841,16 @@ In dit hoofdstuk wordt uitgelegd hoe een en ander wordt aangesloten en bediend. 
 \section{Modules}
 De Modules zijn gebaseerd op de voormalige 'M-track' modules, zoals deze in gebruik waren bij de \marklin groep. Zie voor de mechanische  en elektrische beschrijving hoofdstukken \ref{ch:modules} en \ref{ch:elektra}.
 
-\subsection{Omschakelen basismodules}
-Er zijn 2 soorten modules bij deze baan: 'basis' modules met alleen 2 sporen, zonder wissels of seinen, deze worden gewoon doorgelust, en 'seinenmodules', deze zijn voorzien van een of meerdere van de volgende zaken:
+Er zijn meerdere soorten modules bij deze baan: 
+\begin{itemize}
+\item basismodules met alleen 2 sporen, zonder wissels of seinen, deze worden gewoon doorgelust en kunnen tussen willekeurige andere modules worden geplaatst
+\item 'seinenmodules', deze kunnen seinen en wissels bevatten
+\item stationsmodules
+\item keerlusmodules
+\end{itemize}
+
+\subsection{Basismodules}
+Er zijn 2 soorten basismodules bij deze baan: modules met alleen 2 sporen, zonder wissels of seinen, deze worden gewoon doorgelust, en 'seinenmodules', deze zijn voorzien van een of meerdere van de volgende zaken:
 
 \begin{itemize}
 \item detectiestukken met aansluitdoos (altijd)
@@ -851,7 +859,31 @@ Er zijn 2 soorten modules bij deze baan: 'basis' modules met alleen 2 sporen, zo
 \item modulebooster (optioneel)
 \end{itemize}
 
-Elke seinenmodule is voorzien van detectiestukken, deze worden middels banaanstekkers verbonden aan het bezetmelder aansluitblok.  In dit aansluitblok zit een blauwe kabel en een dubbele netwerkaansluitdoos. De regels voor rijden op 2- of 3-rails zijn als volgt:
+Elke seinenmodule is voorzien van detectiestukken, deze worden middels banaanstekkers verbonden aan het bezetmelder aansluitblok.  In dit aansluitblok zit een blauwe kabel en een dubbele netwerkaansluitdoos. 
+
+\subsection{Omschakelen basismodules}
+
+Op dit moment zijn de modules waarop een booster is gemonteerd, voorzien van een schakelaar waarmee is om te schakelen tussen 2- en 3-rail, zie figuur \ref{im:moduleswitch}.
+
+\begin{figure}[!ht]
+  \captionbox
+  {Omschakelaar module\label{im:moduleswitch}}
+  {\includegraphics[scale=1.0]{images/schakelpaneel_module}}
+\end{figure}
+\begin{figure}[!ht]
+  \captionbox
+  {Omschakelaar centrale\label{im:centraleswitch}}
+  {\includegraphics[scale=1.0]{images/schakelpaneel_centrale}}
+\end{figure}
+
+
+Ook de stationsmodules kunnen omgeschakeld worden middels een schakelknop op het bedieningspaneel, zie figuur \ref{im:centraleswitch}.
+
+Bij het omschakelen moet eerst de digitale spanning van de baan worden gehaald, dit kan door op de centrale of de multimaus het digitale signaal te stoppen (knop 'STOP' op de Multimaus, knop 'OFF' op de centrale), daarna moeten alles boosters worden omgeschakeld, en daarna mag de spanning er weer op.
+
+\subsection{Omschakelen basismodules zonder schakelaars}
+
+Voor de volledigheid volgt hieronder de methodiek voor het handmatig omschakelen van  rijden op 2- of 3-rails:
 
 \begin{itemize}
 \item 2-rails: blauwe kabel in linker aansluiting van netwerkaansluitdoos, netwerkkabel in rechter aansluiting.
@@ -925,7 +957,7 @@ Bij het rijden zonder detectie kunnen alle detectiesecties aan elkaar worden doo
 
 \begin{figure}[!ht]
   \captionbox
-  {Bovenaanzicht modulebooster\label{modulebooster}}
+  {Bovenaanzicht modulebooster\label{im:modulebooster}}
   {\includegraphics[scale=0.5]{images/rcu_foto3}\\}
 \end{figure}
 
@@ -962,6 +994,28 @@ Bij gebruik van meerdere boosters in de baan (1 booster per basismodule), moeten
 \end{figure}
 
 Als dit nog niet gebeurd is moet er maar 1 booster actief gemaakt worden, dus 1 booster aan 230V, en  de andere boosters niet aansluiten!
+
+\subsection{Centrale Stationsmodule met booster}
+
+Voor de aansturing van de stationsmodules is een kast gebouwd (figuur \ref{im:centralekast})met daarin:
+
+\begin{enumerate}
+\item Hoofdschakelaar voor stroomvoorziening baan (rechts op figuur \ref{im:centralekast})
+\item Universele centrale (zie hoofdstuk \ref{ch:centrale}, links op figuur \ref{im:centralekast})
+\item Modulebooster voor stroomvoorziening stationsmodules
+\item Schakelkast voor stationsmodules
+\item Aansluitblok voor overige boosters (grijze aansluitkastje rechtsboven op figuur \ref{im:centralekast})
+\end{enumerate}
+
+\begin{figure}[!ht]
+  \captionbox
+  {Schakelkast Stationsmodules\label{im:centralekast}}
+  {\includegraphics[scale=1.0]{images/schakelkast_station}\\}
+\end{figure}
+
+Hierbij is het van belang dat de overige moduleboosters worden aangesloten via het aansluitblok 4, en de multimaus via de voorste aansluitingen van de boosters.
+
+Op een 230 volt-stekkerblok onderin de kast worden alle voedingen voor de boosters en de verlichting aangesloten, zodat de hele baan geschakeld kan worden met de hoofdschakelaar.
 
 \chapter{Universele Centrale (DCC/Motorola)}
 \label{ch:centrale}
