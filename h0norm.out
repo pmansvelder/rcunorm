@@ -53,20 +53,21 @@
 \BOOKMARK [1][-]{section.10.1}{Aansluiting Centrale aan booster\(s\)}{chapter.10}% 53
 \BOOKMARK [1][-]{section.10.2}{Rijden met Locs}{chapter.10}% 54
 \BOOKMARK [1][-]{section.10.3}{Sturen van seinen en Wissels}{chapter.10}% 55
-\BOOKMARK [0][-]{appendix.A}{Testen Modules}{}% 56
-\BOOKMARK [1][-]{section.A.1}{Zelftest: controle testkastje}{appendix.A}% 57
-\BOOKMARK [1][-]{section.A.2}{kortsluittest op module zonder rijdend materieel - enkel}{appendix.A}% 58
-\BOOKMARK [1][-]{section.A.3}{kortsluittest op module zonder rijdend materieel - dubbel}{appendix.A}% 59
-\BOOKMARK [1][-]{section.A.4}{verbindingstest op module met rijdend materieel \(3-rail\)}{appendix.A}% 60
-\BOOKMARK [1][-]{section.A.5}{verbindingstest op module met rijdend materieel \(2-rail\)}{appendix.A}% 61
-\BOOKMARK [0][-]{appendix.B}{Opbouw detectie aansluitblok}{}% 62
-\BOOKMARK [0][-]{appendix.C}{Beschrijving Interfaceprint MDRRC-II Centrale}{}% 63
-\BOOKMARK [0][-]{appendix.D}{Programmeerschakeling Centrale}{}% 64
-\BOOKMARK [0][-]{appendix.E}{Afmetingen gebruikte kast voor centrale}{}% 65
-\BOOKMARK [0][-]{appendix.F}{Terugmelderaansluitingen}{}% 66
-\BOOKMARK [0][-]{appendix.G}{Instellingen Rocrail}{}% 67
-\BOOKMARK [0][-]{appendix.H}{USB poorten en MDRRC-II centrale}{}% 68
-\BOOKMARK [0][-]{appendix.I}{Gebruik MDRRC-config programma}{}% 69
-\BOOKMARK [1][-]{section.I.1}{Programmainstellingen}{appendix.I}% 70
-\BOOKMARK [1][-]{section.I.2}{Configuratie Editor}{appendix.I}% 71
-\BOOKMARK [1][-]{section.I.3}{Loklijst editor}{appendix.I}% 72
+\BOOKMARK [1][-]{section.10.4}{Rijden met de \(Multi\)Maus}{chapter.10}% 56
+\BOOKMARK [0][-]{appendix.A}{Testen Modules}{}% 57
+\BOOKMARK [1][-]{section.A.1}{Zelftest: controle testkastje}{appendix.A}% 58
+\BOOKMARK [1][-]{section.A.2}{kortsluittest op module zonder rijdend materieel - enkel}{appendix.A}% 59
+\BOOKMARK [1][-]{section.A.3}{kortsluittest op module zonder rijdend materieel - dubbel}{appendix.A}% 60
+\BOOKMARK [1][-]{section.A.4}{verbindingstest op module met rijdend materieel \(3-rail\)}{appendix.A}% 61
+\BOOKMARK [1][-]{section.A.5}{verbindingstest op module met rijdend materieel \(2-rail\)}{appendix.A}% 62
+\BOOKMARK [0][-]{appendix.B}{Opbouw detectie aansluitblok}{}% 63
+\BOOKMARK [0][-]{appendix.C}{Beschrijving Interfaceprint MDRRC-II Centrale}{}% 64
+\BOOKMARK [0][-]{appendix.D}{Programmeerschakeling Centrale}{}% 65
+\BOOKMARK [0][-]{appendix.E}{Afmetingen gebruikte kast voor centrale}{}% 66
+\BOOKMARK [0][-]{appendix.F}{Terugmelderaansluitingen}{}% 67
+\BOOKMARK [0][-]{appendix.G}{Instellingen Rocrail}{}% 68
+\BOOKMARK [0][-]{appendix.H}{USB poorten en MDRRC-II centrale}{}% 69
+\BOOKMARK [0][-]{appendix.I}{Gebruik MDRRC-config programma}{}% 70
+\BOOKMARK [1][-]{section.I.1}{Programmainstellingen}{appendix.I}% 71
+\BOOKMARK [1][-]{section.I.2}{Configuratie Editor}{appendix.I}% 72
+\BOOKMARK [1][-]{section.I.3}{Loklijst editor}{appendix.I}% 73

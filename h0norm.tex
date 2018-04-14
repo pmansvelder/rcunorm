@@ -1,5 +1,7 @@
 \documentclass[12pt,a4paper]{report}
 
+\usepackage{float}
+
 \usepackage[dutch]{babel}
 \usepackage{colortbl}
 
@@ -54,7 +56,7 @@ Normen H0 groep\\
 \hline
 \cellcolor[gray]{0.84}Eigenaar & Marc Timmermans / Peter Mansvelder\\
 \hline
-\cellcolor[gray]{0.84}Versie & 3.2\\
+\cellcolor[gray]{0.84}Versie & 3.3\\
 \hline
 \cellcolor[gray]{0.84}Versiedatum & \today\\
 \hline
@@ -876,6 +878,13 @@ Op dit moment zijn de modules waarop een booster is gemonteerd, voorzien van een
   {\includegraphics[scale=1.0]{images/schakelpaneel_centrale}}
 \end{figure}
 
+Naast de schakelaar zijn er 3 aansluitbussen gemonteerd:
+\begin{itemize}
+\item Rood: digitale rijspanning
+\item Zwart: massa van rijspanning
+\item Groen: Geschakelde rijspanning via schakelaar
+\end{itemize}
+
 Ook de stationsmodules kunnen omgeschakeld worden middels een schakelknop op het bedieningspaneel, zie figuur \ref{im:centraleswitch}.
 
 Bij het omschakelen moet eerst de digitale spanning van de baan worden gehaald, dit kan door op de centrale of de multimaus het digitale signaal te stoppen (knop 'STOP' op de Multimaus, knop 'OFF' op de centrale), daarna moeten alles boosters worden omgeschakeld, en daarna mag de spanning er weer op.
@@ -956,7 +965,7 @@ Bij het rijden zonder detectie kunnen alle detectiesecties aan elkaar worden doo
 
 De stationsmodules vormen een complete 'inzet', bestaande uit 6 modules met een basisformaat van 120 x 60 cm, die in een vaste opstelling worden neergezet.
 
-De aansluitingen met de rest van de baan lopen via de standaard connectoren zoals beschreven in de voorgaande paragrafen, er zijn dus 2 modules (SA1 en SA3) die voorzien zijn van deze connectoren. De hele inzet kan dan ook beschouwd worden als een enkele module voor wat betreft de aanslutiingen.
+De aansluitingen met de rest van de baan lopen via de standaard connectoren zoals beschreven in de voorgaande paragrafen, er zijn dus 2 modules (SA1 en SA3) die voorzien zijn van deze connectoren. De hele inzet kan dan ook beschouwd worden als een enkele module voor wat betreft de aansluitingen.
 
 \begin{figure}[!ht]
   \captionbox
@@ -972,6 +981,14 @@ De aansluitingen tussen de stationsmodules worden gevormd door kabels met 25-pol
   \captionbox
   {Aansluitingen stationsmodules\label{im:stationsconnectors}}
   {\includegraphics[scale=1.0]{images/aansluitingen_stationsmodules}\\}
+\end{figure}
+
+Aan de voorkant van twee modules (SV1 en SV3) in figuur \ref{im:stationsmodules}) zitten extra aansluitingen voor de muizen, zie figuur \ref{im:multimaus_hub}.
+
+\begin{figure}[!ht]
+  \captionbox
+  {Aansluiting (Multi)Maus\label{im:multimaus_hub}}
+  {\includegraphics[scale=0.5]{images/multimaus_hub}\\}
 \end{figure}
 
 \section{Modulebooster/hub}
@@ -1188,6 +1205,56 @@ Per decoderadres kan dit omgewisseld worden:
 \item Kies nu op de Multimaus het adres van de decoder die omgewisseld moet worden
 \item Door nu deze decoder aan te sturen, wordt hij omgewisseld van MM naar DCC en weer omgekeerd, dit kun je volgen op het touchscreen.
 \end{enumerate}
+
+\section{Rijden met de (Multi)Maus}
+\label{ss:multimaus}
+
+Voor het bedienen van de treinen, wissels en seinen wordt gebruik gemaakt van Roco controllers, de zogenaamde 'muis'. Er zijn meerdere types, wij gebruiken er twee:
+\begin{itemize}
+\item Roco Maus, in grijze of rode uitvoering, zie figuur \ref{im:roco_maus}
+\item Roco Multimaus, zie figuur \ref{im:roco_multimaus}
+\end{itemize}
+
+\begin{figure}[!ht]
+  \centering
+  \begin{subfigure}{.5\textwidth}
+    \includegraphics[scale=0.25]{images/roco_maus}
+    \caption{Roco (Power)Mouse/Maus\label{im:roco_maus}}
+  \end{subfigure}%
+  \begin{subfigure}{.5\textwidth}
+    \includegraphics[scale=0.4]{images/roco_multimaus}
+    \caption{Roco Multimaus\label{im:roco_multimaus}}
+   \end{subfigure}
+   \caption{Roco Muizen}
+\end{figure}
+
+De muizen worden aangesloten aan de voorkant van de booster of aan de aansluitkastjes bij de stationsmodule met een 6-aderige kabel. Let op: ze mogen niet direct aan de centrale worden gekoppeld.
+De muizen zijn qua bediening vergelijkbaar, de voornaamste verschillen zijn:
+
+\begin{table}[H]
+\begin{tabular}{|l|l|l|}
+\hline
+Functie&Roco Maus&Roco Multimaus\\
+\hline
+Aantal locs&99&9999\\
+\hline
+Adressen&1-99&1-9999\\
+\hline
+Namen voor locs&Nee&Ja\\
+\hline
+Invoer locadressen&Pijltjes&Numeriek toetsenbord\\
+\hline
+Functies&4&28\\
+\hline
+Wissels en Seinen sturen&Nee&Ja\\
+\hline
+Stopindicatie&Knippert&'Stop' symbool in scherm\\
+\hline
+\end{tabular}
+\caption{Verschillen Roco Muizen}
+\end{table}
+
+De stop knop op beide typen muizen heeft als functie het stoppen of starten van het digitale signaal, dit houdt dus in dat een stopsignaal op een willekeurige muis of de centrale het stoppen van alle treinen tot gevolg heeft. Dit staat los van de kortsluitmelding van een booster, deze heeft geen terugmelding aan de centrale of de andere muizen.
 
 \appendix
 

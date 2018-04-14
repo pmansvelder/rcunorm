@@ -42,35 +42,36 @@
 \contentsline {section}{\numberline {9.2}Modules}{34}{section.9.2}
 \contentsline {subsection}{\numberline {9.2.1}Basismodules}{35}{subsection.9.2.1}
 \contentsline {subsection}{\numberline {9.2.2}Omschakelen basismodules}{35}{subsection.9.2.2}
-\contentsline {subsection}{\numberline {9.2.3}Omschakelen basismodules zonder schakelaars}{35}{subsection.9.2.3}
+\contentsline {subsection}{\numberline {9.2.3}Omschakelen basismodules zonder schakelaars}{36}{subsection.9.2.3}
 \contentsline {subsection}{\numberline {9.2.4}Bezetmeldersecties}{36}{subsection.9.2.4}
 \contentsline {subsection}{\numberline {9.2.5}Aansluiting detectiestukken}{37}{subsection.9.2.5}
 \contentsline {subsection}{\numberline {9.2.6}Zonder bezetmeldersecties}{38}{subsection.9.2.6}
 \contentsline {subsection}{\numberline {9.2.7}Stationsmodules}{38}{subsection.9.2.7}
-\contentsline {section}{\numberline {9.3}Modulebooster/hub}{38}{section.9.3}
+\contentsline {section}{\numberline {9.3}Modulebooster/hub}{39}{section.9.3}
 \contentsline {subsection}{\numberline {9.3.1}Gebruik meerdere boosters en boosterscheiding}{40}{subsection.9.3.1}
 \contentsline {subsection}{\numberline {9.3.2}Centrale Stationsmodule met booster}{41}{subsection.9.3.2}
-\contentsline {chapter}{\numberline {10}Universele Centrale (DCC/Motorola)}{42}{chapter.10}
-\contentsline {section}{\numberline {10.1}Aansluiting Centrale aan booster(s)}{43}{section.10.1}
-\contentsline {section}{\numberline {10.2}Rijden met Locs}{44}{section.10.2}
-\contentsline {subsubsection}{Toevoegen Loc}{45}{section*.55}
-\contentsline {subsubsection}{Verwijderen loc}{45}{section*.56}
-\contentsline {subsubsection}{Wisselen Decodertype (vanaf softwareversie 3.6.1)}{46}{section*.57}
-\contentsline {section}{\numberline {10.3}Sturen van seinen en Wissels}{46}{section.10.3}
-\contentsline {chapter}{\numberline {A}Testen Modules}{47}{appendix.A}
-\contentsline {section}{\numberline {A.1}Zelftest: controle testkastje}{47}{section.A.1}
-\contentsline {section}{\numberline {A.2}kortsluittest op module zonder rijdend materieel - enkel}{48}{section.A.2}
-\contentsline {section}{\numberline {A.3}kortsluittest op module zonder rijdend materieel - dubbel}{49}{section.A.3}
-\contentsline {section}{\numberline {A.4}verbindingstest op module met rijdend materieel (3-rail)}{51}{section.A.4}
-\contentsline {section}{\numberline {A.5}verbindingstest op module met rijdend materieel (2-rail)}{52}{section.A.5}
-\contentsline {chapter}{\numberline {B}Opbouw detectie aansluitblok}{54}{appendix.B}
-\contentsline {chapter}{\numberline {C}Beschrijving Interfaceprint MDRRC-II Centrale}{55}{appendix.C}
-\contentsline {chapter}{\numberline {D}Programmeerschakeling Centrale}{57}{appendix.D}
-\contentsline {chapter}{\numberline {E}Afmetingen gebruikte kast voor centrale}{58}{appendix.E}
-\contentsline {chapter}{\numberline {F}Terugmelderaansluitingen}{59}{appendix.F}
-\contentsline {chapter}{\numberline {G}Instellingen Rocrail}{60}{appendix.G}
-\contentsline {chapter}{\numberline {H}USB poorten en MDRRC-II centrale}{62}{appendix.H}
-\contentsline {chapter}{\numberline {I}Gebruik MDRRC-config programma}{63}{appendix.I}
-\contentsline {section}{\numberline {I.1}Programmainstellingen}{63}{section.I.1}
-\contentsline {section}{\numberline {I.2}Configuratie Editor}{64}{section.I.2}
-\contentsline {section}{\numberline {I.3}Loklijst editor}{65}{section.I.3}
+\contentsline {chapter}{\numberline {10}Universele Centrale (DCC/Motorola)}{43}{chapter.10}
+\contentsline {section}{\numberline {10.1}Aansluiting Centrale aan booster(s)}{44}{section.10.1}
+\contentsline {section}{\numberline {10.2}Rijden met Locs}{45}{section.10.2}
+\contentsline {subsubsection}{Toevoegen Loc}{46}{section*.56}
+\contentsline {subsubsection}{Verwijderen loc}{46}{section*.57}
+\contentsline {subsubsection}{Wisselen Decodertype (vanaf softwareversie 3.6.1)}{47}{section*.58}
+\contentsline {section}{\numberline {10.3}Sturen van seinen en Wissels}{47}{section.10.3}
+\contentsline {section}{\numberline {10.4}Rijden met de (Multi)Maus}{47}{section.10.4}
+\contentsline {chapter}{\numberline {A}Testen Modules}{49}{appendix.A}
+\contentsline {section}{\numberline {A.1}Zelftest: controle testkastje}{49}{section.A.1}
+\contentsline {section}{\numberline {A.2}kortsluittest op module zonder rijdend materieel - enkel}{50}{section.A.2}
+\contentsline {section}{\numberline {A.3}kortsluittest op module zonder rijdend materieel - dubbel}{51}{section.A.3}
+\contentsline {section}{\numberline {A.4}verbindingstest op module met rijdend materieel (3-rail)}{53}{section.A.4}
+\contentsline {section}{\numberline {A.5}verbindingstest op module met rijdend materieel (2-rail)}{54}{section.A.5}
+\contentsline {chapter}{\numberline {B}Opbouw detectie aansluitblok}{56}{appendix.B}
+\contentsline {chapter}{\numberline {C}Beschrijving Interfaceprint MDRRC-II Centrale}{57}{appendix.C}
+\contentsline {chapter}{\numberline {D}Programmeerschakeling Centrale}{59}{appendix.D}
+\contentsline {chapter}{\numberline {E}Afmetingen gebruikte kast voor centrale}{60}{appendix.E}
+\contentsline {chapter}{\numberline {F}Terugmelderaansluitingen}{61}{appendix.F}
+\contentsline {chapter}{\numberline {G}Instellingen Rocrail}{62}{appendix.G}
+\contentsline {chapter}{\numberline {H}USB poorten en MDRRC-II centrale}{64}{appendix.H}
+\contentsline {chapter}{\numberline {I}Gebruik MDRRC-config programma}{65}{appendix.I}
+\contentsline {section}{\numberline {I.1}Programmainstellingen}{65}{section.I.1}
+\contentsline {section}{\numberline {I.2}Configuratie Editor}{66}{section.I.2}
+\contentsline {section}{\numberline {I.3}Loklijst editor}{67}{section.I.3}
