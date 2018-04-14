@@ -40,3 +40,5 @@ h0_centrale.log
 *.out
 *.gz
 *.toc
+*.gz
+*.log
