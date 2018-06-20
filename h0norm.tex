@@ -56,7 +56,7 @@ Normen H0 groep\\
 \hline
 \cellcolor[gray]{0.84}Eigenaar & Marc Timmermans / Peter Mansvelder\\
 \hline
-\cellcolor[gray]{0.84}Versie & 3.3\\
+\cellcolor[gray]{0.84}Versie & 3.4\\
 \hline
 \cellcolor[gray]{0.84}Versiedatum & \today\\
 \hline
@@ -217,8 +217,8 @@ Dit zijn de gebruikte profielen van de kopschotten, de voorkant van de module is
 
 \begin{figure}[!ht]
   \captionbox
-  {Jeugdmodule, asymmetrisch\label{im:jeugdbak}}
-  {\includegraphics[scale=0.9]{images/jeugdbak}}
+  {Jeugdmodule, asymmetrisch (N.B.: de maat 100mm moet 110mm zijn)\label{im:jeugdbak}}
+  {\includegraphics[scale=0.6]{images/jeugdbak}}
 \end{figure}
 
 \section{De rechte module met spoordijk}
@@ -250,7 +250,7 @@ Hierna kan de moer die onderaan de mast zit ''vast'' worden gedraaid.
 
 \section{De rechte module zonder spoordijk}
 Een module zonder spoordijk, met 2 sporen die aan een kant van de module worden gelegd, zodat er meer ruimte is voor scenery aan de achterkant. Dit zijn de oude jeugdmodules (zie figuur \ref{im:jeugdbak} voor profiel).
-De hartmaat van de rails is hierbij hetzelfde als de andere modules: 57mm. De rails wordt dicht tegen de voorkant va de bak aangelegd, waarbij de afstand tussen de voorkant van de module en de 1e rail 100mm bedraagt.
+De hartmaat van de rails is hierbij hetzelfde als de andere modules: 57mm. De rails wordt dicht tegen de voorkant va de bak aangelegd, waarbij de afstand tussen de voorkant van de module en het midden van de eerste rail 100mm bedraagt plus de dikte van de gebruikte plaat (9mm in de meeste gevallen), dus 109mm. Voor het gemak houden we 110mm aan.
 
 \section{Overgangsmodules}
 Overgangsmodules tussen de twee verschillende soorten modules (met en zonder spoordijk). Dit kunnen dus verschillende overgangen zijn:
@@ -490,25 +490,25 @@ De bediening van de wissels moet gebeuren door schakelaars op de module zelf, me
 Verder moet de bediening aan te sluiten zijn op een wisseldecoder, zodat de wissels ook digitaal bestuurd kunnen worden. Beide mogelijkheden moeten parallel inzetbaar zijn, dus zelfs met digitale besturing moet handbediening nog mogelijk zijn.
 Er is alleen een tekening gemaakt van 1 variant, type '3a', zie figuur \ref{im:modulebak_seinen_wissels}. Desgewenst kunnen ook de andere varianten uitgetekend worden:
 
-\begin{table}[!ht]
+\begin{table}[H]
 {\renewcommand{\arraystretch}{3}%
-\begin{tabular}{| l | m{7cm} | m{7cm} |}
+\begin{tabular}{| m{3cm} | m{7cm} | m{7cm} |}
 \hline
-Basismodule 3a&Links 2 sporen, rechts 4 sporen& \parbox[c]{1em}{\includegraphics[width=7cm]{images/module_3a}} \\
+Basismodule 3a&Links 2 sporen, rechts 4 sporen&\parbox{1em}{\includegraphics[width=7cm]{images/module_3a}} \\
 \hline
-Basismodule 3b&Links 4 sporen, rechts 2 sporen& \parbox[c]{1em}{\includegraphics[width=7cm]{images/module_3b}} \\
+Basismodule 3b&Links 4 sporen, rechts 2 sporen& \parbox[s]{1em}{\includegraphics[width=7cm]{images/module_3b}} \\
 \hline
-Basismodule 3c&Links 2 sporen, rechts 3 sporen (linkerspoor met wissel)&\parbox[c]{1em} {\includegraphics[width=7cm]{images/module_3c}} \\
+Basismodule 3c&Links 2 sporen, rechts 3 sporen (linkerspoor met wissel)&\parbox[s]{1em} {\includegraphics[width=7cm]{images/module_3c}} \\
 \hline
-Basismodule 3d&Links 2 sporen, rechts 3 sporen (rechterspoor met wissel)&\parbox[c]{1em} {\includegraphics[width=7cm]{images/module_3d}} \\
+Basismodule 3d&Links 2 sporen, rechts 3 sporen (rechterspoor met wissel)&\parbox[s]{1em} {\includegraphics[width=7cm]{images/module_3d}} \\
 \hline
-Basismodule 3e&Links 3 sporen, rechts 2 sporen (linkerspoor met wissel)&\parbox[c]{1em} {\includegraphics[width=7cm]{images/module_3e}} \\
+Basismodule 3e&Links 3 sporen, rechts 2 sporen (linkerspoor met wissel)&\parbox[s]{1em} {\includegraphics[width=7cm]{images/module_3e}} \\
 \hline
-Basismodule 3f&Links 3 sporen, rechts 2 sporen (rechterspoor met wissel)&\parbox[c]{1em} {\includegraphics[width=7cm]{images/module_3f}} \\
+Basismodule 3f&Links 3 sporen, rechts 2 sporen (rechterspoor met wissel)&\parbox[s]{1em} {\includegraphics[width=7cm]{images/module_3f}} \\
 \hline
-Basismodule 3g&Links 3 sporen, rechts 3 sporen (linkerspoor met wissel naar links, rechterspoor met wissel naar rechts)&\parbox[c]{1em} {\includegraphics[width=7cm]{images/module_3g}} \\
+Basismodule 3g&Links 3 sporen, rechts 3 sporen (linkerspoor met wissel naar links, rechterspoor met wissel naar rechts)&\parbox[s]{1em} {\includegraphics[width=7cm]{images/module_3g}} \\
 \hline
-Basismodule 3h&Links 3 sporen, rechts 3 sporen ( rechterspoor met wissel naar links, linkerspoor met wissel naar rechts)&\parbox[c]{1em} {\includegraphics[width=7cm]{images/module_3h}} \\
+Basismodule 3h&Links 3 sporen, rechts 3 sporen ( rechterspoor met wissel naar links, linkerspoor met wissel naar rechts)&\parbox[s]{1em} {\includegraphics[width=7cm]{images/module_3h}} \\
 \hline
 \end{tabular}
 }
@@ -540,8 +540,23 @@ Er is besloten om af te stappen van de PTT-stekers en een versimpelde aansluitin
 
 \subsection{Kabels}
 De kleuren van de kabels zijn niet kritisch, het is alleen voor het troubleshooten nuttig om de aangegeven kleuren aan te houden.
+We houden de volgende kleuren aan:
+\begin{table}[!ht]
+\begin{tabular}{| l | l | l |}
+\hline
+\cellcolor[gray]{0.84}Kleur&\cellcolor[gray]{0.84}Functie&\cellcolor[gray]{0.84}Aansluiting\\
+\hline
+Rood&Digitale spanning&vast aangesloten aan middengeleider\\
+\hline
+Bruin&Digitale nul&vast aangesloten aan buitenste rail\\
+\hline
+Paars&Schakelrails&aangesloten aan digitale spanning bij 2-rail, nul bij 3-rail\\
+\hline
+\end{tabular}
+\caption{Kleuren Aansluitdraden}
+\end{table}
 
-\begin{figure}[!ht]
+\begin{figure}[ht]
   \captionbox
   {Bovenaanzicht bekabeling basismodule\label{im:modulebak}}
   {\includegraphics[scale=0.6]{images/rcu_modulebak}}
